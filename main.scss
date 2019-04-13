@@ -311,7 +311,11 @@ select::-ms-expand {
   flex-wrap: wrap;
 }
 
-.align-items {
+.align-center {
+  align-items: center;
+}
+
+.align-start {
   align-items: flex-start;
 }
 
@@ -372,6 +376,27 @@ select::-ms-expand {
   min-height: 250px;
   background: $white;
   box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
+  height: auto;
+}
+
+.navigation {
+  background: #fff;
+}
+
+.logo-text {
+  max-width: 162px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #333333;
+  border-left: 1px solid #ff8f00;
+  padding-left: 16px;
+}
+
+.navbar-custom-link {
+  font-size: 17px;
+  line-height: 54px;
+  color: #333333;
+  margin-left: 40px;
 }
 
 .about {
@@ -447,7 +472,7 @@ select::-ms-expand {
     flex-direction: column;
     .circle {
       height: 10px;
-      width: 10px;
+      min-width: 10px;
       margin: $base-step $base-step * 2 0 0;
       background: $primary;
       border-radius: 50%;
@@ -499,6 +524,27 @@ select::-ms-expand {
     margin-left: 160px;
     font-size: 300px;
     line-height: 300px;
+  }
+}
+
+.structure {
+  &__title {
+    font-size: 24px;
+    line-height: 27px;
+    color: #333333;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 130px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 70px;
+    }
   }
 }
 
@@ -554,6 +600,7 @@ select::-ms-expand {
   &__info {
     font-size: 17px;
     color: #333333;
+    font-weight: 500;
     &--white {
       color: #fff;
     }

@@ -23,9 +23,13 @@
       <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-              <img src="assets/logo/logo.jpg" width="170" height="100" />
-            </a>
+            <div class="flex align-center">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/logo/logo.jpg" width="170" height="100" />
+                  </a>
+                  <div class="logo-text">Общество с ограниченной ответственностью «ЛИДЕР»</div>
+            </div>
+           
             <a
               role="button"
               class="navbar-burger burger"
@@ -39,48 +43,56 @@
             </a>
           </div>
           <div class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item">
-                Home
-              </a>
-              <a class="navbar-item">
-                Documentation
-              </a>
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  More
-                </a>
-                <div class="navbar-dropdown">
-                  <a class="navbar-item">
-                    About
-                  </a>
-                  <a class="navbar-item">
-                    Jobs
-                  </a>
-                  <a class="navbar-item">
-                    Contact
-                  </a>
-                  <hr class="navbar-divider" />
-                  <a class="navbar-item">
-                    Report an issue
-                  </a>
-                </div>
-              </div>
-            </div>
             <div class="navbar-end">
               <div class="navbar-item">
-                <div class="buttons">
-                  <a class="button is-primary">
-                    <strong>Sign up</strong>
-                  </a>
-                  <a class="button is-light">
-                    Log in
-                  </a>
+                  <img
+                  src="assets/icons/phone.svg"
+                  class="contacts__phone-i"
+                  alt=""
+                />
+                <div>
+                  <div class="contacts__info">+7 (916) 404-71-47</div>
+                  <div class="contacts__info-text">Телефон для связи</div>
                 </div>
+              </div>
+              <div class="navbar-item">
+                  <img
+                  src="assets/icons/phone.svg"
+                  class="contacts__phone-i"
+                  alt=""
+                />
+                <div>
+                  <div class="contacts__info">+7 (968) 334-90-09</div>
+                  <div class="contacts__info-text">Телефон для связи</div>
+                </div>
+              </div>
+              <div class="navbar-item">
+                  <img
+                  src="assets/icons/email.svg"
+                  class="contacts__phone-i"
+                  alt=""
+                />
+                <div>
+                  <div class="contacts__info">zkbi.lider@gmail.com</div>
+                  <div class="contacts__info-text">Электронная почта</div>
+                </div>
+              </div>
               </div>
             </div>
           </div>
         </nav>
+        <div class="container">
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                  <a href="#" class="navbar-custom-link">О технологии</a>
+                  <a href="#" class="navbar-custom-link">Характеристики</a>
+                  <a href="#" class="navbar-custom-link">Типы блоков</a>
+                  <a href="#" class="navbar-custom-link">Решения</a>
+                  <a href="#" class="navbar-custom-link">Портфолио</a>
+                  <a href="#" class="navbar-custom-link">Контакты</a>
+                  </div>
+                </div>
+        </div>
       </div>
     </section>
     <section class="section hero">
@@ -274,7 +286,10 @@
       <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Характеристики</h2>
-        <div class="structure"></div>
+        <div class="structure">
+          <div class="structure__title">Структура блока</div> 
+          <img src="assets/image/structure.png" class="structure__img" alt="" />
+        </div>
         <div class="columns is-multiline parametrs-list">
           <div class="column is-half">
             <div class="parametr">
@@ -570,7 +585,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex m-four align-items">
+              <div class="flex m-four align-start">
                 <img
                   src="assets/icons/email.svg"
                   class="contacts__phone-i"
@@ -604,7 +619,7 @@
             Напишите нам, если у вас остались вопросы
           </div>
           <form>
-            <div class="flex columns align-items feedback__mob-view">
+            <div class="flex columns align-start feedback__mob-view">
               <div class="column">
                 <div class="feedback__input-wrap m-two">
                   <div class="feedback__input-title">Ваше имя</div>
@@ -690,7 +705,7 @@
               </div>
             </div>
           </div>
-          <div class="flex m-four align-items">
+          <div class="flex m-four align-start">
             <img
               src="assets/icons/email.svg"
               class="contacts__phone-i"
