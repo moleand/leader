@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="font/stylesheet.css" />
+    <link rel="stylesheet" href="./libs/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./libs/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdnjs.com/libraries/bulma" />
     <link
       rel="stylesheet"
@@ -15,6 +17,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <section class="navigation">
       <div class="container">
@@ -498,11 +501,239 @@
         </div>
       </div>
     </section>
-    <section class="section portfolio">
+    <section class="section portfolio white-bg">
       <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Портфолио</h2>
+        <div class="relative">
+          <div class="owl-carousel">
+            <div class="portfolio__item">
+              <img src="assets/image/portfolio.jpg" alt="" />
+              <div class="portfolio__text">
+                Гостиница «Вега» 17 этажей <br />
+                (г. Тольятти)
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img src="assets/image/portfolio.jpg" alt="" />
+              <div class="portfolio__text">
+                Фрагмент навесного фасада
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img src="assets/image/portfolio.jpg" alt="" />
+              <div class="portfolio__text">
+                г. Конаково <br />
+                Тверская область
+              </div>
+            </div>
+          </div>
+          <a href="#" class="portfolio__all">
+            Все проекты
+          </a>
+        </div>
       </div>
     </section>
+    <section class="section contacts white-bg">
+      <div class="container">
+        <div class="line m-two"></div>
+        <h2 class="m-five">Контакты</h2>
+        <div class="columns">
+          <div class="column">
+            <div class="contacts__text">
+              По вопросам сотрудничества нас можно найти по следующим адресам
+            </div>
+          </div>
+          <div class="column">
+            <div class="flex space-between flex-wrap">
+              <div>
+                <div class="flex m-four">
+                  <img
+                    src="assets/icons/phone.svg"
+                    class="contacts__phone-i"
+                    alt=""
+                  />
+                  <div>
+                    <div class="contacts__info">+7 (968) 334-90-09</div>
+                    <div class="contacts__info-text">Телефон для связи</div>
+                  </div>
+                </div>
+                <div class="flex m-four">
+                  <img
+                    src="assets/icons/phone.svg"
+                    class="contacts__phone-i"
+                    alt=""
+                  />
+                  <div>
+                    <div class="contacts__info">+7 (916) 404-71-47</div>
+                    <div class="contacts__info-text">Телефон для связи</div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex m-four align-items">
+                <img
+                  src="assets/icons/email.svg"
+                  class="contacts__phone-i"
+                  alt=""
+                />
+                <div>
+                  <div class="contacts__info">zkbi.lider@gmail.com</div>
+                  <div class="contacts__info-text">Электронная почта</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                src="assets/icons/point.svg"
+                class="contacts__phone-i"
+                alt=""
+              />
+              <div class="contacts__place">
+                Московская обл., г. Воскресенск, ул. Заводская, дом 1, помещение
+                2а
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section white-bg">
+      <div class="container">
+        <div class="feedback">
+          <div class="feedback__title">
+            Напишите нам, если у вас остались вопросы
+          </div>
+          <form>
+            <div class="flex columns align-items feedback__mob-view">
+              <div class="column">
+                <div class="feedback__input-wrap m-two">
+                  <div class="feedback__input-title">Ваше имя</div>
+                  <input class="feedback__input" />
+                </div>
+                <div class="feedback__input-wrap">
+                  <div class="feedback__input-title">Телефон</div>
+                  <input class="feedback__input" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="feedback__input-wrap">
+                  <div class="feedback__input-title">Текст сообщения</div>
+                  <textarea
+                    class="feedback__textarea"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <button class="feedback__btn">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-main">
+      <div class="footer-main__left">
+        <img src="assets/image/logo-footer.png" class="footer-main__img" />
+        <div class="footer-main__copy">© 2019 ООО ЗКБИ “Лидер”</div>
+        <div class="footer-main__reserved">Все права защищены</div>
+      </div>
+      <div class="footer-main__right">
+        <div class="footer-main__list">
+          <div class="footer-main__item">
+            <a href="#" class="footer-main__link">О технологии</a>
+          </div>
+          <div class="footer-main__item">
+            <a href="#" class="footer-main__link">Характеристики</a>
+          </div>
+          <div class="footer-main__item">
+            <a href="#" class="footer-main__link">Решения</a>
+          </div>
+          <div class="footer-main__item">
+            <a href="#" class="footer-main__link">Портфолио</a>
+          </div>
+          <div class="footer-main__item">
+            <a href="#" class="footer-main__link">Контакты</a>
+          </div>
+        </div>
+        <div class="flex space-between flex-wrap footer-main__contacts-wrap">
+          <div class="footer-main__phones-wrap">
+            <div class="flex m-four">
+              <img
+                src="assets/icons/phone.svg"
+                class="contacts__phone-i"
+                alt=""
+              />
+              <div>
+                <div class="contacts__info contacts__info--white">
+                  +7 (968) 334-90-09
+                </div>
+                <div class="contacts__info-text contacts__info-text--white">
+                  Телефон для связи
+                </div>
+              </div>
+            </div>
+            <div class="flex m-four">
+              <img
+                src="assets/icons/phone.svg"
+                class="contacts__phone-i"
+                alt=""
+              />
+              <div>
+                <div class="contacts__info contacts__info--white">
+                  +7 (916) 404-71-47
+                </div>
+                <div class="contacts__info-text contacts__info-text--white">
+                  Телефон для связи
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex m-four align-items">
+            <img
+              src="assets/icons/email.svg"
+              class="contacts__phone-i"
+              alt=""
+            />
+            <div>
+              <div class="contacts__info contacts__info--white">
+                zkbi.lider@gmail.com
+              </div>
+              <div class="contacts__info-text contacts__info-text--white">
+                Электронная почта
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./libs/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 25,
+          nav: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 2
+            },
+            1000: {
+              items: 3
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
