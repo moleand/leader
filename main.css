@@ -3952,7 +3952,19 @@ select::-ms-expand {
     font-size: 18px;
     color: #f9f9f9;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    cursor: pointer;
+  }
+.feedback__btn:disabled {
+  background: #ffebc3;
+  width: 247px;
+  height: 64px;
+  font-size: 18px;
+  color: #f9f9f9;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
   @media screen and (max-width: 640px) {
     .feedback__mob-view {
       display: block; } }

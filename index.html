@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./libs/owl.carousel.min.css" />
     <link rel="stylesheet" href="./libs/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdnjs.com/libraries/bulma" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -29,13 +30,14 @@
                   </a>
                   <div class="logo-text">Общество с ограниченной ответственностью «ЛИДЕР»</div>
             </div>
-           
+
             <a
               role="button"
               class="navbar-burger burger"
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
+              id="burger_button"
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -73,7 +75,7 @@
                   alt=""
                 />
                 <div>
-                  <div class="contacts__info">zkbi.lider@gmail.com</div>
+                  <a class="contacts__info" href="mailto:zkbi.lider@gmail.com">zkbi.lider@gmail.com</a>
                   <div class="contacts__info-text">Электронная почта</div>
                 </div>
               </div>
@@ -84,12 +86,12 @@
         <div class="container">
             <div class="navbar-menu">
                 <div class="navbar-end">
-                  <a href="#" class="navbar-custom-link">О технологии</a>
-                  <a href="#" class="navbar-custom-link">Характеристики</a>
-                  <a href="#" class="navbar-custom-link">Типы блоков</a>
-                  <a href="#" class="navbar-custom-link">Решения</a>
-                  <a href="#" class="navbar-custom-link">Портфолио</a>
-                  <a href="#" class="navbar-custom-link">Контакты</a>
+                  <a href="#about" class="navbar-custom-link">О технологии</a>
+                  <a href="#parameters" class="navbar-custom-link">Характеристики</a>
+                  <a href="#types" class="navbar-custom-link">Типы блоков</a>
+                  <a href="#solutions" class="navbar-custom-link">Решения</a>
+                  <a href="#portfolio" class="navbar-custom-link">Портфолио</a>
+                  <a href="#contacts" class="navbar-custom-link">Контакты</a>
                   </div>
                 </div>
         </div>
@@ -110,7 +112,7 @@
         </div>
       </div>
     </section>
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="container">
         <div class="line m-two"></div>
         <h2>О технологии</h2>
@@ -218,7 +220,7 @@
         </div>
       </div>
     </section>
-    <section class="section types">
+    <section class="section types" id="types">
       <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Типы блоков</h2>
@@ -282,12 +284,12 @@
         </div>
       </div>
     </section>
-    <section class="section parametrs">
+    <section class="section parametrs" id="parameters">
       <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Характеристики</h2>
         <div class="structure">
-          <div class="structure__title">Структура блока</div> 
+          <div class="structure__title">Структура блока</div>
           <img src="assets/image/structure.png" class="structure__img" alt="" />
         </div>
         <div class="columns is-multiline parametrs-list">
@@ -484,7 +486,7 @@
         </button>
       </div>
     </section>
-    <section class="section solutions">
+    <section class="section solutions" id="solutions">
       <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Решения</h2>
@@ -516,7 +518,7 @@
         </div>
       </div>
     </section>
-    <section class="section portfolio white-bg">
+    <section class="section portfolio white-bg" id="portfolio">
       <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Портфолио</h2>
@@ -549,7 +551,7 @@
         </div>
       </div>
     </section>
-    <section class="section contacts white-bg">
+    <section class="section contacts white-bg" id="contacts">
       <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Контакты</h2>
@@ -569,7 +571,7 @@
                     alt=""
                   />
                   <div>
-                    <div class="contacts__info">+7 (968) 334-90-09</div>
+                    <a class="contacts__info" href="tel:+79683349009">+7 (968) 334-90-09</a>
                     <div class="contacts__info-text">Телефон для связи</div>
                   </div>
                 </div>
@@ -580,7 +582,7 @@
                     alt=""
                   />
                   <div>
-                    <div class="contacts__info">+7 (916) 404-71-47</div>
+                    <a class="contacts__info" href="tel:+79164047147">+7 (916) 404-71-47</a>
                     <div class="contacts__info-text">Телефон для связи</div>
                   </div>
                 </div>
@@ -592,7 +594,7 @@
                   alt=""
                 />
                 <div>
-                  <div class="contacts__info">zkbi.lider@gmail.com</div>
+                  <a class="contacts__info" href="mailto:zkbi.lider@gmail.com">zkbi.lider@gmail.com</a>
                   <div class="contacts__info-text">Электронная почта</div>
                 </div>
               </div>
@@ -612,7 +614,7 @@
         </div>
       </div>
     </section>
-    <section class="section white-bg">
+    <section class="section white-bg" id="feedback">
       <div class="container">
         <div class="feedback">
           <div class="feedback__title">
@@ -623,11 +625,11 @@
               <div class="column">
                 <div class="feedback__input-wrap m-two">
                   <div class="feedback__input-title">Ваше имя</div>
-                  <input class="feedback__input" />
+                  <input class="feedback__input" id="feedback_name"/>
                 </div>
                 <div class="feedback__input-wrap">
-                  <div class="feedback__input-title">Телефон</div>
-                  <input class="feedback__input" />
+                  <div class="feedback__input-title" >Телефон</div>
+                  <input class="feedback__input" id="feedback_phone" />
                 </div>
               </div>
               <div class="column">
@@ -636,14 +638,14 @@
                   <textarea
                     class="feedback__textarea"
                     name=""
-                    id=""
                     cols="30"
                     rows="10"
+                    id="feedback_info"
                   ></textarea>
                 </div>
               </div>
             </div>
-            <button class="feedback__btn">Отправить сообщение</button>
+            <button class="feedback__btn" id="feedback_submit" type="button">Отправить сообщение</button>
           </form>
         </div>
       </div>
@@ -681,9 +683,9 @@
                 alt=""
               />
               <div>
-                <div class="contacts__info contacts__info--white">
+                <a class="contacts__info contacts__info--white" href="tel:+79683349009">
                   +7 (968) 334-90-09
-                </div>
+                </a>
                 <div class="contacts__info-text contacts__info-text--white">
                   Телефон для связи
                 </div>
@@ -712,9 +714,9 @@
               alt=""
             />
             <div>
-              <div class="contacts__info contacts__info--white">
+              <a href="mailto:zkbi.lider@gmail.com" class="contacts__info contacts__info--white">
                 zkbi.lider@gmail.com
-              </div>
+              </a>
               <div class="contacts__info-text contacts__info-text--white">
                 Электронная почта
               </div>
@@ -728,6 +730,7 @@
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./libs/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function() {
@@ -749,6 +752,23 @@
           }
         });
       });
+    </script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="libs/core.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
     </script>
   </body>
 </html>
