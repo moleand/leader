@@ -20,84 +20,67 @@
   </head>
 
   <body>
-    <section class="navigation">
+    <nav class="navbar navbar-head">
       <div class="container">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <div class="flex align-center">
-                <a class="navbar-item" href="index.html">
-                    <img src="assets/logo/logo.jpg" width="170" height="100" />
-                  </a>
-                  <div class="logo-text">Общество с ограниченной ответственностью «ЛИДЕР»</div>
-            </div>
-
-            <a
-              role="button"
-              class="navbar-burger burger"
-              aria-label="menu"
-              aria-expanded="false"
-              data-target="navbarBasicExample"
-              id="burger_button"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+        <div class="navbar-brand">
+          <div class="flex align-center">
+            <a class="navbar-item" href="index.html">
+              <img src="assets/logo/logo.jpg" width="170" height="100" />
             </a>
+            <div class="logo-text">Общество с ограниченной ответственностью «ЛИДЕР»</div>
           </div>
-          <div class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                  <img
-                  src="assets/icons/phone.svg"
-                  class="contacts__phone-i"
-                  alt=""
-                />
-                <div>
-                  <div class="contacts__info">+7 (916) 404-71-47</div>
-                  <div class="contacts__info-text">Телефон для связи</div>
-                </div>
-              </div>
-              <div class="navbar-item">
-                  <img
-                  src="assets/icons/phone.svg"
-                  class="contacts__phone-i"
-                  alt=""
-                />
-                <div>
-                  <div class="contacts__info">+7 (968) 334-90-09</div>
-                  <div class="contacts__info-text">Телефон для связи</div>
-                </div>
-              </div>
-              <div class="navbar-item">
-                  <img
-                  src="assets/icons/email.svg"
-                  class="contacts__phone-i"
-                  alt=""
-                />
-                <div>
-                  <a class="contacts__info" href="mailto:zkbi.lider@gmail.com">zkbi.lider@gmail.com</a>
-                  <div class="contacts__info-text">Электронная почта</div>
-                </div>
-              </div>
-              </div>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+            id="burger_button"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <a class="navbar-item" href="tel:+79164047147">
+            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
+            <div>
+              <div class="contacts__info">+7 (916) 404-71-47</div>
+              <div class="contacts__info-text">Телефон для связи</div>
             </div>
-          </div>
-        </nav>
-        <div class="container">
-            <div class="navbar-menu">
-                <div class="navbar-end">
-                  <a href="#about" class="navbar-custom-link">О технологии</a>
-                  <a href="#parameters" class="navbar-custom-link">Характеристики</a>
-                  <a href="#types" class="navbar-custom-link">Типы блоков</a>
-                  <a href="#solutions" class="navbar-custom-link">Решения</a>
-                  <a href="#portfolio" class="navbar-custom-link">Портфолио</a>
-                  <a href="#contacts" class="navbar-custom-link">Контакты</a>
-                  </div>
-                </div>
+          </a>
+          <a class="navbar-item" href="tel:+79683349009">
+            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
+            <div>
+              <div class="contacts__info">+7 (968) 334-90-09</div>
+              <div class="contacts__info-text">Телефон для связи</div>
+            </div>
+          </a>
+          <a class="navbar-item" href="mailto:zkbi.lider@gmail.com">
+            <img src="assets/icons/email.svg" class="contacts__phone-i" alt="" />
+            <div>
+              <div class="contacts__info">zkbi.lider@gmail.com</div>
+              <div class="contacts__info-text">Электронная почта</div>
+            </div>
+          </a>
         </div>
       </div>
-    </section>
-    <section class="section hero">
+    </nav>
+    <nav class="navbar is-hidden-touch">
+      <div class="container">
+        <div class="navbar-menu">
+          <a href="#about" class="navbar-custom-link">О технологии</a>
+          <a href="#parameters" class="navbar-custom-link">Характеристики</a>
+          <a href="#types" class="navbar-custom-link">Типы блоков</a>
+          <a href="#solutions" class="navbar-custom-link">Решения</a>
+          <a href="#portfolio" class="navbar-custom-link">Портфолио</a>
+          <a href="#contacts" class="navbar-custom-link">Контакты</a>
+        </div>
+      </div>
+    </nav>
+    <section class="section heroic">
       <div class="container">
         <p class="subtitle">
           Завод кермазитобетонных изделий «Лидер»
@@ -115,7 +98,7 @@
     <section class="section about" id="about">
       <div class="container">
         <div class="line m-two"></div>
-        <h2>О технологии</h2>
+        <h2 class="m-five">О технологии</h2>
         <div class="columns is-multiline">
           <div class="column is-half">
             <div class="technology">
@@ -123,12 +106,10 @@
               <p class="body-text">
                 - отечественная разработка, суть которой заключается в
                 <span class="important-text">капсуляции</span>
-                керамзитового гравия (щебня) цементным беспесчаным раствором,
-                при которой зерна гравия (щебня) покрываются тонким слоем
-                цементного раствора, образуя монолитную крупнопористую систему с
-                объемным содержанием крупных воздушных пор до 45%. При этом,
-                цементный раствор не заполняет межзерновую пустотность
-                Керамзитобетона.
+                керамзитового гравия (щебня) цементным беспесчаным раствором, при которой зерна гравия (щебня)
+                покрываются тонким слоем цементного раствора, образуя монолитную крупнопористую систему с объемным
+                содержанием крупных воздушных пор до 45%. При этом, цементный раствор не заполняет межзерновую
+                пустотность Керамзитобетона.
               </p>
             </div>
           </div>
@@ -166,36 +147,33 @@
               </div>
             </div>
           </div>
-          <div class="column is-one-third">
-            <div class="card">
+          <div class="column is-one-third-tablet">
+            <div class="card hoverable">
               <span class="icon m-four">
                 <i class="fas fa-tint-slash"></i>
               </span>
               <p class="bold-text has-text-center">
-                Капсуляция препятствует проникновению влаги внутрь керамзитового
-                гравия
+                Капсуляция препятствует проникновению влаги внутрь керамзитового гравия
               </p>
             </div>
           </div>
           <div class="column is-one-third">
-            <div class="card">
+            <div class="card hoverable">
               <span class="icon m-four">
                 <i class="fas fa-water"></i>
               </span>
               <p class="bold-text has-text-center">
-                Образованная внутри Керамзитобетона влага легко выводится наружу
-                без ухудшения его характеристик
+                Образованная внутри Керамзитобетона влага легко выводится наружу без ухудшения его характеристик
               </p>
             </div>
           </div>
           <div class="column is-one-third">
-            <div class="card">
+            <div class="card hoverable">
               <span class="icon m-four">
                 <i class="fas fa-layer-group"></i>
               </span>
               <p class="bold-text has-text-center">
-                Замена многослойных наружных ограждающих конструкций зданий и
-                сооружений на однослойные конструкции
+                Замена многослойных наружных ограждающих конструкций зданий и сооружений на однослойные конструкции
               </p>
             </div>
           </div>
@@ -208,11 +186,9 @@
                   <span class="important-text">запатентованы</span>
                 </h3>
                 <p class="table-text">
-                  Блоки соответствуют требованиям СТО 34650525-001-2018 «Блоки
-                  из крупнопористого керамзитобетона «Лидер». Технические
-                  условия» (стандарт согласован ведущими профильными
-                  учреждениями России, прошел экспертизу в ТК 465
-                  «Строительство» и зарегистрирован в ФГУП «Стандартинформ»).
+                  Блоки соответствуют требованиям СТО 34650525-001-2018 «Блоки из крупнопористого керамзитобетона
+                  «Лидер». Технические условия» (стандарт согласован ведущими профильными учреждениями России, прошел
+                  экспертизу в ТК 465 «Строительство» и зарегистрирован в ФГУП «Стандартинформ»).
                 </p>
               </div>
             </div>
@@ -231,7 +207,7 @@
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text">Порядовочные</p>
+              <p class="bold-text has-text-center">Порядовочные</p>
               <p class="table-text has-text-center">с одним лицевым слоем</p>
             </div>
           </div>
@@ -240,7 +216,7 @@
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text">Порядовочные армированные</p>
+              <p class="bold-text has-text-center">Порядовочные армированные</p>
               <p class="table-text has-text-center">с одним лицевым слоем</p>
             </div>
           </div>
@@ -249,7 +225,7 @@
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text">Угловые</p>
+              <p class="bold-text has-text-center">Угловые</p>
               <p class="table-text has-text-center">
                 с двумя сопряженными лицевыми слоями
               </p>
@@ -263,10 +239,9 @@
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text">Декоративные</p>
+              <p class="bold-text has-text-center">Декоративные</p>
               <p class="table-text has-text-center">
-                с гладкой, рифленой, колотой и др. фактурой поверхности
-                (дополнительная декоративная отделка)
+                с гладкой, рифленой, колотой и др. фактурой поверхности (дополнительная декоративная отделка)
               </p>
             </div>
           </div>
@@ -275,7 +250,7 @@
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text">Рядовые</p>
+              <p class="bold-text has-text-center">Рядовые</p>
               <p class="table-text has-text-center">
                 с фактурой поверхности без дополнительной декоративной отделки
               </p>
@@ -298,8 +273,7 @@
               <div class="circle"></div>
               <div class="parametr-text">
                 <p class="bold-text m-two">
-                  Номинальные размеры Блоков [длина, ширина (толщина), высота],
-                  мм:
+                  Номинальные размеры Блоков [длина, ширина (толщина), высота], мм:
                 </p>
                 <p class="table-text">
                   - порядовочные – 400(500)х400х192 и 1190х400х400(500);<br />
@@ -492,23 +466,13 @@
         <h2 class="m-five">Решения</h2>
         <div class="solutions-box">
           <div class="solution-radio">
-            <input
-              type="radio"
-              class="radio"
-              id="choice1"
-              name="solution-type"
-              value="solution1"
-              checked
-            /><label for="choice1"
+            <input type="radio" class="radio" id="choice1" name="solution-type" value="solution1" checked /><label
+              for="choice1"
               >Узел опирания на стены плиты перекрытия</label
             >
-            <input
-              type="radio"
-              class="radio"
-              id="choice2"
-              name="solution-type"
-              value="solution2"
-            /><label for="choice2">Исполнение перемычки оконного откоса</label>
+            <input type="radio" class="radio" id="choice2" name="solution-type" value="solution2" /><label for="choice2"
+              >Исполнение перемычки оконного откоса</label
+            >
           </div>
           <div class="solution-image">
             <span class="icon m-two">
@@ -565,22 +529,14 @@
             <div class="flex space-between flex-wrap">
               <div>
                 <div class="flex m-four">
-                  <img
-                    src="assets/icons/phone.svg"
-                    class="contacts__phone-i"
-                    alt=""
-                  />
+                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
                   <div>
                     <a class="contacts__info" href="tel:+79683349009">+7 (968) 334-90-09</a>
                     <div class="contacts__info-text">Телефон для связи</div>
                   </div>
                 </div>
                 <div class="flex m-four">
-                  <img
-                    src="assets/icons/phone.svg"
-                    class="contacts__phone-i"
-                    alt=""
-                  />
+                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
                   <div>
                     <a class="contacts__info" href="tel:+79164047147">+7 (916) 404-71-47</a>
                     <div class="contacts__info-text">Телефон для связи</div>
@@ -588,11 +544,7 @@
                 </div>
               </div>
               <div class="flex m-four align-start">
-                <img
-                  src="assets/icons/email.svg"
-                  class="contacts__phone-i"
-                  alt=""
-                />
+                <img src="assets/icons/email.svg" class="contacts__phone-i" alt="" />
                 <div>
                   <a class="contacts__info" href="mailto:zkbi.lider@gmail.com">zkbi.lider@gmail.com</a>
                   <div class="contacts__info-text">Электронная почта</div>
@@ -600,14 +552,9 @@
               </div>
             </div>
             <div class="flex">
-              <img
-                src="assets/icons/point.svg"
-                class="contacts__phone-i"
-                alt=""
-              />
+              <img src="assets/icons/point.svg" class="contacts__phone-i" alt="" />
               <div class="contacts__place">
-                Московская обл., г. Воскресенск, ул. Заводская, дом 1, помещение
-                2а
+                Московская обл., г. Воскресенск, ул. Заводская, дом 1, помещение 2а
               </div>
             </div>
           </div>
@@ -625,23 +572,17 @@
               <div class="column">
                 <div class="feedback__input-wrap m-two">
                   <div class="feedback__input-title">Ваше имя</div>
-                  <input class="feedback__input" id="feedback_name"/>
+                  <input class="feedback__input" id="feedback_name" />
                 </div>
                 <div class="feedback__input-wrap">
-                  <div class="feedback__input-title" >Телефон</div>
+                  <div class="feedback__input-title">Телефон</div>
                   <input class="feedback__input" id="feedback_phone" />
                 </div>
               </div>
               <div class="column">
                 <div class="feedback__input-wrap">
                   <div class="feedback__input-title">Текст сообщения</div>
-                  <textarea
-                    class="feedback__textarea"
-                    name=""
-                    cols="30"
-                    rows="10"
-                    id="feedback_info"
-                  ></textarea>
+                  <textarea class="feedback__textarea" name="" cols="30" rows="10" id="feedback_info"></textarea>
                 </div>
               </div>
             </div>
@@ -651,79 +592,74 @@
       </div>
     </section>
     <footer class="footer-main">
-      <div class="footer-main__left">
-        <img src="assets/image/logo-footer.png" class="footer-main__img" />
-        <div class="footer-main__copy">© 2019 ООО ЗКБИ “Лидер”</div>
-        <div class="footer-main__reserved">Все права защищены</div>
-      </div>
-      <div class="footer-main__right">
-        <div class="footer-main__list">
-          <div class="footer-main__item">
-            <a href="#" class="footer-main__link">О технологии</a>
-          </div>
-          <div class="footer-main__item">
-            <a href="#" class="footer-main__link">Характеристики</a>
-          </div>
-          <div class="footer-main__item">
-            <a href="#" class="footer-main__link">Решения</a>
-          </div>
-          <div class="footer-main__item">
-            <a href="#" class="footer-main__link">Портфолио</a>
-          </div>
-          <div class="footer-main__item">
-            <a href="#" class="footer-main__link">Контакты</a>
-          </div>
-        </div>
-        <div class="flex space-between flex-wrap footer-main__contacts-wrap">
-          <div class="footer-main__phones-wrap">
-            <div class="flex m-four">
-              <img
-                src="assets/icons/phone.svg"
-                class="contacts__phone-i"
-                alt=""
-              />
-              <div>
-                <a class="contacts__info contacts__info--white" href="tel:+79683349009">
-                  +7 (968) 334-90-09
-                </a>
-                <div class="contacts__info-text contacts__info-text--white">
-                  Телефон для связи
-                </div>
-              </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-two-fifths">
+            <div class="footer-main__title m-two">
+              Завод кермазитобетонных изделий «Лидер»
             </div>
-            <div class="flex m-four">
-              <img
-                src="assets/icons/phone.svg"
-                class="contacts__phone-i"
-                alt=""
-              />
-              <div>
-                <div class="contacts__info contacts__info--white">
-                  +7 (916) 404-71-47
-                </div>
-                <div class="contacts__info-text contacts__info-text--white">
-                  Телефон для связи
-                </div>
+            <div class="footer-main__copy">© 2019 ООО ЗКБИ “Лидер”</div>
+            <div class="footer-main__reserved">Все права защищены</div>
+          </div>
+          <div class="column">
+            <div class="footer-main__list">
+              <div class="footer-main__item">
+                <a href="#" class="footer-main__link">О технологии</a>
+              </div>
+              <div class="footer-main__item">
+                <a href="#" class="footer-main__link">Характеристики</a>
+              </div>
+              <div class="footer-main__item">
+                <a href="#" class="footer-main__link">Решения</a>
+              </div>
+              <div class="footer-main__item">
+                <a href="#" class="footer-main__link">Портфолио</a>
+              </div>
+              <div class="footer-main__item">
+                <a href="#" class="footer-main__link">Контакты</a>
               </div>
             </div>
           </div>
-          <div class="flex m-four align-start">
-            <img
-              src="assets/icons/email.svg"
-              class="contacts__phone-i"
-              alt=""
-            />
-            <div>
-              <a href="mailto:zkbi.lider@gmail.com" class="contacts__info contacts__info--white">
-                zkbi.lider@gmail.com
-              </a>
-              <div class="contacts__info-text contacts__info-text--white">
-                Электронная почта
+          <div class="column is-two-fifths">
+            <div class="flex space-between flex-wrap footer-main__contacts-wrap">
+              <div class="footer-main__phones-wrap">
+                <div class="flex m-four">
+                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
+                  <div>
+                    <a class="contacts__info contacts__info--white" href="tel:+79683349009">
+                      +7 (968) 334-90-09
+                    </a>
+                    <div class="contacts__info-text contacts__info-text--white">
+                      Телефон для связи
+                    </div>
+                  </div>
+                </div>
+                <div class="flex m-four">
+                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
+                  <div>
+                    <div class="contacts__info contacts__info--white">
+                      +7 (916) 404-71-47
+                    </div>
+                    <div class="contacts__info-text contacts__info-text--white">
+                      Телефон для связи
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex m-four align-start">
+                <img src="assets/icons/email.svg" class="contacts__phone-i" alt="" />
+                <div>
+                  <a href="mailto:zkbi.lider@gmail.com" class="contacts__info contacts__info--white">
+                    zkbi.lider@gmail.com
+                  </a>
+                  <div class="contacts__info-text contacts__info-text--white">
+                    Электронная почта
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
@@ -734,7 +670,7 @@
     <script src="./libs/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function() {
-        $(".owl-carousel").owlCarousel({
+        $('.owl-carousel').owlCarousel({
           loop: true,
           margin: 25,
           nav: true,
@@ -756,19 +692,23 @@
     <script src="https://unpkg.com/imask"></script>
     <script src="libs/core.js"></script>
     <script>
-        $(document).ready(function(){
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
+      $(document).ready(function() {
+        $('a').on('click', function(event) {
+          if (this.hash !== '') {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              800,
+              function() {
+                window.location.hash = hash;
+              }
+            );
+          }
         });
+      });
     </script>
   </body>
 </html>

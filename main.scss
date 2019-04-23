@@ -9,12 +9,12 @@
   padding: 0;
   margin: 0;
 }
-@import "node_modules/bulma/sass/utilities/_all.sass";
-@import "node_modules/bulma/sass/layout/_all.sass";
-@import "node_modules/bulma/sass/grid/_all.sass";
-@import "node_modules/bulma/sass/base/_all.sass";
-@import "node_modules/bulma/sass/components/navbar.sass";
-@import "node_modules/bulma/sass/elements/container.sass";
+@import 'node_modules/bulma/sass/utilities/_all.sass';
+@import 'node_modules/bulma/sass/layout/_all.sass';
+@import 'node_modules/bulma/sass/grid/_all.sass';
+@import 'node_modules/bulma/sass/base/_all.sass';
+@import 'node_modules/bulma/sass/components/navbar.sass';
+@import 'node_modules/bulma/sass/elements/container.sass';
 
 $black: #333;
 $gray-dark: #616161;
@@ -26,7 +26,7 @@ $primary: #ff8e01;
 $base-step: 8px;
 
 body {
-  font-family: "SF UI Text";
+  font-family: 'SF UI Text';
   display: flex;
   color: $black;
   flex-direction: column;
@@ -38,7 +38,7 @@ h1 {
   font-size: 64px;
   line-height: 1.1;
   font-weight: 900;
-  font-family: "SF UI Display";
+  font-family: 'SF UI Display';
 }
 
 h2 {
@@ -46,21 +46,27 @@ h2 {
   line-height: 1.2;
   font-weight: 900;
   text-transform: uppercase;
-  font-family: "SF UI Display";
+  font-family: 'SF UI Display';
+  @media screen and (max-width: 650px) {
+    font-size: 28px;
+  }
 }
 
 h3 {
   font-size: 24px;
   line-height: 1.2;
   font-weight: bold;
-  font-family: "SF UI Display";
+  font-family: 'SF UI Display';
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+  }
 }
 
 h4 {
   font-size: 18px;
   line-height: 1.5;
   font-weight: bold;
-  font-family: "SF UI Display";
+  font-family: 'SF UI Display';
 }
 
 h5 {
@@ -82,7 +88,7 @@ h5 {
 .bold-text {
   font-size: 18px;
   font-weight: 600;
-  font-family: "SF UI Display";
+  font-family: 'SF UI Display';
 }
 
 .body-text {
@@ -324,16 +330,62 @@ select::-ms-expand {
   margin-bottom: 0;
 }
 
-.navigation {
-  .navbar-brand {
-    img {
-      max-height: 100%;
+.navbar {
+  position: relative;
+}
+.navbar:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: calc(999px + 100vw);
+  background-color: rgb(244, 244, 244);
+  bottom: 0;
+  left: -999px;
+}
+.navbar-menu {
+  justify-content: space-between;
+  margin-right: 0 !important;
+
+  .navbar-item {
+    border: 1px solid rgb(244, 244, 244);
+    border-right: none;
+    border-bottom: none;
+    flex-grow: 1;
+    justify-content: center;
+
+    &:hover {
+      box-shadow: 0 4px 12px 0 rgba(38, 39, 39, 0.14);
+      background: none;
+
+      .contacts__info {
+        color: $primary;
+      }
+    }
+  }
+  .navbar-item:last-of-type {
+    border-right: 1px solid rgb(244, 244, 244);
+  }
+}
+.navbar-brand {
+  align-items: center;
+
+  span {
+    height: 2px;
+    color: $primary;
+  }
+  img {
+    height: 100px;
+    max-height: 100%;
+
+    @media screen and (max-width: 650px) {
+      height: 60px;
+      width: auto;
     }
   }
 }
 
-.hero {
-  background-image: url("assets/image/hero.jpg");
+.section.heroic {
+  background-image: url('assets/image/hero.jpg');
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
@@ -344,6 +396,16 @@ select::-ms-expand {
     color: $primary;
     text-transform: uppercase;
     font-weight: bold;
+    @media screen and (max-width: 650px) {
+      font-size: 14px;
+    }
+  }
+  h1 {
+    @media screen and (max-width: 650px) {
+      font-size: 28px;
+      margin-top: 16px;
+      margin-bottom: $base-step * 4;
+    }
   }
   .icon {
     display: flex;
@@ -357,7 +419,7 @@ select::-ms-expand {
 }
 
 .line {
-  height: 2px;
+  height: 4px;
   width: 80px;
   background: $primary;
 }
@@ -376,7 +438,19 @@ select::-ms-expand {
   min-height: 250px;
   background: $white;
   box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
-  height: auto;
+  height: 100%;
+
+  @media screen and (max-width: 769px) {
+    padding: $base-step * 2;
+  }
+}
+
+.hoverable:hover {
+  color: $white;
+  background-color: $primary;
+  i {
+    color: $white;
+  }
 }
 
 .navigation {
@@ -390,13 +464,29 @@ select::-ms-expand {
   color: #333333;
   border-left: 1px solid #ff8f00;
   padding-left: 16px;
+  margin-left: -8px;
 }
 
 .navbar-custom-link {
-  font-size: 17px;
+  font-size: 14px;
+  text-transform: uppercase;
   line-height: 54px;
-  color: #333333;
-  margin-left: 40px;
+  color: $black;
+  font-weight: bold;
+  border: 1px solid rgb(244, 244, 244);
+  flex-grow: 1;
+  text-align: center;
+  border-right: none;
+  border-top: none;
+
+  &:hover {
+    color: $primary;
+    box-shadow: 0 4px 12px 0 rgba(38, 39, 39, 0.08);
+  }
+}
+
+.navbar-custom-link:last-of-type {
+  border-right: 1px solid rgb(244, 244, 244);
 }
 
 .about {
@@ -411,6 +501,10 @@ select::-ms-expand {
     background: $white;
     padding: $base-step * 4 $base-step * 6;
     box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
+
+    @media screen and (max-width: 650px) {
+      padding: $base-step * 2;
+    }
     .single-advantage {
       display: flex;
       align-items: center;
@@ -421,17 +515,20 @@ select::-ms-expand {
         border: 2px solid $primary;
         border-radius: 50%;
         height: 40px;
-        width: 40px;
+        min-width: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: $base-step * 4;
+        margin-right: $base-step * 2;
+        @media screen and (max-width: 650px) {
+          margin-right: $base-step * 2;
+        }
       }
 
       .line {
         position: absolute;
         bottom: 0;
-        left: $base-step * 9;
+        left: 56px;
         width: 40px;
       }
     }
@@ -446,9 +543,20 @@ select::-ms-expand {
     justify-content: center;
     padding: $base-step * 8 0 0;
 
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+      padding-top: $base-step * 2;
+    }
+
     .content {
       max-width: 640px;
       margin-left: $base-step * 4;
+
+      @media screen and (max-width: 650px) {
+        margin-left: 0;
+        text-align: center;
+        padding: $base-step * 2;
+      }
     }
   }
 }
@@ -489,13 +597,22 @@ select::-ms-expand {
   .solutions-box {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
   .solution-radio {
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
     max-width: 500px;
-    input[type="radio"] {
+
+    @media screen and (max-width: 767px) {
+      flex-direction: row;
+    }
+
+    input[type='radio'] {
       display: none;
     }
     label {
@@ -506,13 +623,22 @@ select::-ms-expand {
       color: $gray-dark;
       background-color: $gray-lighter;
       position: relative;
+
+      @media screen and (max-width: 769px) {
+        padding: $base-step * 2;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        text-align: center;
+      }
     }
-    input[type="radio"]:checked + label {
+    input[type='radio']:checked + label {
       color: $black;
       background-color: $white;
     }
-    input[type="radio"]:checked + label::after {
-      content: "";
+    input[type='radio']:checked + label::after {
+      content: '';
       width: 100px;
       height: 2px;
       background: $primary;
@@ -524,6 +650,10 @@ select::-ms-expand {
     margin-left: 160px;
     font-size: 300px;
     line-height: 300px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -550,8 +680,15 @@ select::-ms-expand {
 
 .portfolio {
   &__item {
-    border: 1px solid #e0e0e0;
+    border: 1px solid $gray-light;
     border-radius: 4px;
+    background: $white;
+    margin: 0 1px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 5px 15px rgba(84, 110, 136, 0.2);
+    }
   }
 
   &__text {
@@ -563,6 +700,7 @@ select::-ms-expand {
     align-items: center;
     justify-content: center;
     font-weight: 500;
+    padding: $base-step;
   }
 
   &__all {
@@ -585,6 +723,10 @@ select::-ms-expand {
       position: static;
       margin: 20px auto 0;
     }
+  }
+
+  .owl-stage-outer {
+    padding-bottom: $base-step * 2;
   }
 }
 
@@ -650,7 +792,7 @@ select::-ms-expand {
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     width: 100%;
-    padding: 0 5px;
+    padding: 0 8px;
   }
 
   &__input-title {
@@ -665,11 +807,13 @@ select::-ms-expand {
     resize: none;
     height: 132px;
     width: 100%;
+    padding: $base-step;
   }
 
   &__btn {
     background: #ff8e01;
-    width: 247px;
+    max-width: 247px;
+    width: 100%;
     height: 64px;
     font-size: 18px;
     color: #f9f9f9;
@@ -687,61 +831,41 @@ select::-ms-expand {
 .footer-main {
   background: #072039;
   display: flex;
-
+  color: $white;
+  padding: $base-step * 3;
   @media screen and (max-width: 650px) {
     flex-direction: column-reverse;
   }
 
-  &__right {
-    display: flex;
-    align-items: flex-start;
-    padding: 60px 0;
-    max-width: 1000px;
-    width: 100%;
-    justify-content: space-around;
-    @media screen and (max-width: 460px) {
-      flex-direction: column;
-      padding: 30px 1.5rem 0;
-    }
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $primary;
+    line-height: 110%;
   }
 
   &__link {
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: bold;
     color: #ffffff;
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   &__item {
     margin-bottom: 17px;
   }
 
-  &__left {
-    width: 282px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    @media screen and (max-width: 650px) {
-      width: 100%;
-      padding: 10px 0;
-    }
-  }
-
-  &__img {
-    margin-bottom: 20px;
-  }
-
   &__copy {
     font-size: 14px;
-    color: #000000;
     margin-bottom: 7px;
   }
 
   &__reserved {
     font-size: 14px;
     line-height: 18px;
-    color: #616161;
     margin-right: 40px;
   }
 
@@ -793,14 +917,14 @@ select::-ms-expand {
 }
 
 .owl-prev:after {
-  content: "";
+  content: '';
   border-style: solid;
   border-width: 10px 10px 10px 0;
   border-color: transparent #000333 transparent transparent;
 }
 
 .owl-next:after {
-  content: "";
+  content: '';
   border-style: solid;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #000333;
