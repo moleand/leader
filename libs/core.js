@@ -16,7 +16,7 @@ $(document).ready(function () {
         $('#feedback_name').attr('disabled', true);
         $('#feedback_phone').attr('disabled', true);
 
-        axios.post('http://localhost/api/order/mail', body)
+        axios.post('https://zbki-lider.ru/api/order/mail', body)
             .then(res => {
                 $('#feedback_submit')[0].innerText = 'Сообщение успешно отправлено!';
 
