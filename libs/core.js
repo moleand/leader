@@ -55,3 +55,51 @@ function checkForm() {
     }
 }
 
+$(function() {
+    var b = $("#wrap_button");
+    var l = document.querySelectorAll(".collapsable");
+
+    b.click(function() {
+        for (let i = 0; i < l.length; i++) {
+            const elem = l[i];
+            if(elem.classList.contains('hidden')){
+                elem.classList.remove('hidden');
+                elem.style.display = "";
+            } else {
+                elem.classList.add('hidden');
+                elem.style.display = "none";
+                $('html, body').animate({
+                    scrollTop: $('#params_list').offset().top
+                }, 100);
+            }
+        }
+    });
+
+
+    for (let i = 0; i < l.length; i++) {
+        const elem = l[i];
+        if(elem.classList.contains('hidden')){
+            elem.classList.add('hidden');
+            elem.style.display = "none";
+        }
+    }
+});
+
+$(function () {
+    var bb = $("#burger_button");
+    var bb_outer = $("#bb_outer");
+    var bb_inner = $("#bb_inner");
+
+    bb.click(function () {
+        var act = bb_outer.hasClass("is-hidden-touch");
+        if(act){
+            bb_outer.removeClass("is-hidden-touch");
+            bb_inner.addClass("is-active");
+            bb.addClass("is-active");
+        } else {
+            bb_outer.addClass("is-hidden-touch");
+            bb_inner.removeClass("is-active");
+            bb.removeClass("is-active");
+        }
+    })
+});

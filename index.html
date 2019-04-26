@@ -1,714 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="font/stylesheet.css" />
-    <link rel="stylesheet" href="./libs/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./libs/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.com/libraries/bulma" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="font/stylesheet.css"/>
+    <link rel="stylesheet" href="./libs/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./libs/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/bulma"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
     />
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-head">
-      <div class="container">
+<body>
+<nav class="navbar navbar-head">
+    <div class="container">
         <div class="navbar-brand">
-          <div class="flex align-center">
-            <a class="navbar-item" href="index.html">
-              <img src="assets/logo/logo.jpg" width="170" height="100" />
-            </a>
-            <div class="logo-text">Общество с ограниченной ответственностью «ЛИДЕР»</div>
-          </div>
+            <div class="flex align-center">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/logo/logo.jpg" width="170" height="100"/>
+                </a>
+                <div class="logo-text">Общество с ограниченной ответственностью «ЛИДЕР»</div>
+            </div>
 
-          <a
-            role="button"
-            class="navbar-burger burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-            id="burger_button"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+            <a
+                    role="button"
+                    class="navbar-burger burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                    id="burger_button"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
         <div class="navbar-menu">
-          <a class="navbar-item" href="tel:+79164047147">
-            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
-            <div>
-              <div class="contacts__info">+7 (916) 404-71-47</div>
-              <div class="contacts__info-text">Телефон для связи</div>
-            </div>
-          </a>
-          <a class="navbar-item" href="tel:+79683349009">
-            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
-            <div>
-              <div class="contacts__info">+7 (968) 334-90-09</div>
-              <div class="contacts__info-text">Телефон для связи</div>
-            </div>
-          </a>
-          <a class="navbar-item" href="mailto:zkbi.lider@gmail.com">
-            <img src="assets/icons/email.svg" class="contacts__phone-i" alt="" />
-            <div>
-              <div class="contacts__info">zkbi.lider@gmail.com</div>
-              <div class="contacts__info-text">Электронная почта</div>
-            </div>
-          </a>
+            <a class="navbar-item" href="tel:+79164047147">
+                <img src="assets/icons/phone.svg" class="contacts__phone-i" alt=""/>
+                <div>
+                    <div class="contacts__info">+7 (916) 404-71-47</div>
+                    <div class="contacts__info-text">Телефон для связи</div>
+                </div>
+            </a>
+            <a class="navbar-item" href="tel:+79683349009">
+                <img src="assets/icons/phone.svg" class="contacts__phone-i" alt=""/>
+                <div>
+                    <div class="contacts__info">+7 (968) 334-90-09</div>
+                    <div class="contacts__info-text">Телефон для связи</div>
+                </div>
+            </a>
+            <a class="navbar-item" href="mailto:zkbi.lider@gmail.com">
+                <img src="assets/icons/email.svg" class="contacts__phone-i" alt=""/>
+                <div>
+                    <div class="contacts__info">zkbi.lider@gmail.com</div>
+                    <div class="contacts__info-text">Электронная почта</div>
+                </div>
+            </a>
         </div>
-      </div>
-    </nav>
-    <nav class="navbar is-hidden-touch">
-      <div class="container">
-        <div class="navbar-menu">
-          <a href="#about" class="navbar-custom-link">О технологии</a>
-          <a href="#parameters" class="navbar-custom-link">Характеристики</a>
-          <a href="#types" class="navbar-custom-link">Типы блоков</a>
-          <a href="#solutions" class="navbar-custom-link">Решения</a>
-          <a href="#portfolio" class="navbar-custom-link">Портфолио</a>
-          <a href="#contacts" class="navbar-custom-link">Контакты</a>
+    </div>
+</nav>
+<nav class="navbar is-hidden-touch" id="bb_outer">
+    <div class="container">
+        <div class="navbar-menu" id="bb_inner">
+            <a href="#about" class="navbar-custom-link">О технологии</a>
+            <a href="#parameters" class="navbar-custom-link">Характеристики</a>
+            <a href="#types" class="navbar-custom-link">Типы блоков</a>
+            <a href="#solutions" class="navbar-custom-link">Решения</a>
+            <a href="#portfolio" class="navbar-custom-link">Портфолио</a>
+            <a href="#contacts" class="navbar-custom-link">Контакты</a>
         </div>
-      </div>
-    </nav>
-    <section class="section heroic">
-      <div class="container">
+    </div>
+</nav>
+<section class="section heroic">
+    <div class="container">
         <p class="subtitle">
-          Завод кермазитобетонных изделий «Лидер»
+            Завод кермазитобетонных изделий «Лидер»
         </p>
         <h1 class="m-ten">
-          Блоки из крупнопористого <br />керамзитобетона <br />
-          <span class="accent">«Лидер»</span>
+            Блоки из крупнопористого <br/>керамзитобетона <br/>
+            <span class="accent">«Лидер»</span>
         </h1>
         <div class="icon">
-          <img src="assets/icons/up-down.png" alt="" />
-          <span>Подробнее</span>
+            <img src="assets/icons/up-down.png" alt=""/>
+            <span>Подробнее</span>
         </div>
-      </div>
-    </section>
-    <section class="section about" id="about">
-      <div class="container">
+    </div>
+</section>
+<section class="section about" id="about">
+    <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">О технологии</h2>
         <div class="columns is-multiline">
-          <div class="column is-half">
-            <div class="technology">
-              <h3 class="m-two">Крупнопористый керамзитобетон</h3>
-              <p class="body-text">
-                - отечественная разработка, суть которой заключается в
-                <span class="important-text">капсуляции</span>
-                керамзитового гравия (щебня) цементным беспесчаным раствором, при которой зерна гравия (щебня)
-                покрываются тонким слоем цементного раствора, образуя монолитную крупнопористую систему с объемным
-                содержанием крупных воздушных пор до 45%. При этом, цементный раствор не заполняет межзерновую
-                пустотность Керамзитобетона.
-              </p>
+            <div class="column is-half">
+                <div class="technology">
+                    <h3 class="m-two">Крупнопористый керамзитобетон</h3>
+                    <p class="body-text">
+                        - отечественная разработка, суть которой заключается в
+                        <span class="important-text">капсуляции</span>
+                        керамзитового гравия (щебня) цементным беспесчаным раствором, при которой зерна гравия (щебня)
+                        покрываются тонким слоем цементного раствора, образуя монолитную крупнопористую систему с
+                        объемным
+                        содержанием крупных воздушных пор до 45%. При этом, цементный раствор не заполняет межзерновую
+                        пустотность Керамзитобетона.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="column is-half">
-            <div class="content advantages">
-              <div class="single-advantage m-two">
-                <div class="advantage-count">1</div>
-                <p class="bold-text">Высокая теплоэффективность</p>
-                <div class="line"></div>
-              </div>
-              <div class="single-advantage m-two">
-                <div class="advantage-count">2</div>
-                <p class="bold-text">Высокая паропроницаемость</p>
-                <div class="line"></div>
-              </div>
-              <div class="single-advantage m-two">
-                <div class="advantage-count">3</div>
-                <p class="bold-text">Низкая сорбционная способность</p>
-                <div class="line"></div>
-              </div>
-              <div class="single-advantage m-two">
-                <div class="advantage-count">4</div>
-                <p class="bold-text">Грибостойкость</p>
-                <div class="line"></div>
-              </div>
-              <div class="single-advantage m-two">
-                <div class="advantage-count">5</div>
-                <p class="bold-text">Негорючесть</p>
-                <div class="line"></div>
-              </div>
-              <div class="single-advantage">
-                <div class="advantage-count">6</div>
-                <p class="bold-text">Огнестойкость</p>
-                <div class="line"></div>
-              </div>
+            <div class="column is-half">
+                <div class="content advantages">
+                    <div class="single-advantage m-two">
+                        <div class="advantage-count">1</div>
+                        <p class="bold-text">Высокая теплоэффективность</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="single-advantage m-two">
+                        <div class="advantage-count">2</div>
+                        <p class="bold-text">Высокая паропроницаемость</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="single-advantage m-two">
+                        <div class="advantage-count">3</div>
+                        <p class="bold-text">Низкая сорбционная способность</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="single-advantage m-two">
+                        <div class="advantage-count">4</div>
+                        <p class="bold-text">Грибостойкость</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="single-advantage m-two">
+                        <div class="advantage-count">5</div>
+                        <p class="bold-text">Негорючесть</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="single-advantage">
+                        <div class="advantage-count">6</div>
+                        <p class="bold-text">Огнестойкость</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-one-third-tablet">
-            <div class="card hoverable">
+            <div class="column is-one-third-tablet">
+                <div class="card hoverable">
               <span class="icon m-four">
                 <i class="fas fa-tint-slash"></i>
               </span>
-              <p class="bold-text has-text-center">
-                Капсуляция препятствует проникновению влаги внутрь керамзитового гравия
-              </p>
+                    <p class="bold-text has-text-center">
+                        Капсуляция препятствует проникновению влаги внутрь керамзитового гравия
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="card hoverable">
+            <div class="column is-one-third">
+                <div class="card hoverable">
               <span class="icon m-four">
                 <i class="fas fa-water"></i>
               </span>
-              <p class="bold-text has-text-center">
-                Образованная внутри Керамзитобетона влага легко выводится наружу без ухудшения его характеристик
-              </p>
+                    <p class="bold-text has-text-center">
+                        Образованная внутри Керамзитобетона влага легко выводится наружу без ухудшения его характеристик
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="card hoverable">
+            <div class="column is-one-third">
+                <div class="card hoverable">
               <span class="icon m-four">
                 <i class="fas fa-layer-group"></i>
               </span>
-              <p class="bold-text has-text-center">
-                Замена многослойных наружных ограждающих конструкций зданий и сооружений на однослойные конструкции
-              </p>
+                    <p class="bold-text has-text-center">
+                        Замена многослойных наружных ограждающих конструкций зданий и сооружений на однослойные
+                        конструкции
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="column is-full">
-            <div class="patent">
-              <img src="assets/icons/patent.svg" alt="" />
-              <div class="content">
-                <h3 class="m-two">
-                  Блоки и технология производства
-                  <span class="important-text">запатентованы</span>
-                </h3>
-                <p class="table-text">
-                  Блоки соответствуют требованиям СТО 34650525-001-2018 «Блоки из крупнопористого керамзитобетона
-                  «Лидер». Технические условия» (стандарт согласован ведущими профильными учреждениями России, прошел
-                  экспертизу в ТК 465 «Строительство» и зарегистрирован в ФГУП «Стандартинформ»).
-                </p>
-              </div>
+            <div class="column is-full">
+                <div class="patent">
+                    <img src="assets/icons/patent.svg" alt=""/>
+                    <div class="content">
+                        <h3 class="m-two">
+                            Блоки и технология производства
+                            <span class="important-text">запатентованы</span>
+                        </h3>
+                        <p class="table-text">
+                            Блоки соответствуют требованиям СТО 34650525-001-2018 «Блоки из крупнопористого
+                            керамзитобетона
+                            «Лидер». Технические условия» (стандарт согласован ведущими профильными учреждениями России,
+                            прошел
+                            экспертизу в ТК 465 «Строительство» и зарегистрирован в ФГУП «Стандартинформ»).
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="section types" id="types">
-      <div class="container">
+    </div>
+</section>
+<section class="section types" id="types">
+    <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Типы блоков</h2>
         <h3 class="m-one">По назначению</h3>
         <div class="columns is-multiline">
-          <div class="column is-one-third">
-            <div class="card">
+            <div class="column is-one-third">
+                <div class="card">
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text has-text-center">Порядовочные</p>
-              <p class="table-text has-text-center">с одним лицевым слоем</p>
+                    <p class="bold-text has-text-center">Порядовочные</p>
+                    <p class="table-text has-text-center">с одним лицевым слоем</p>
+                </div>
             </div>
-          </div>
-          <div class="column is-one-third ">
-            <div class="card">
+            <div class="column is-one-third ">
+                <div class="card">
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text has-text-center">Порядовочные армированные</p>
-              <p class="table-text has-text-center">с одним лицевым слоем</p>
+                    <p class="bold-text has-text-center">Порядовочные армированные</p>
+                    <p class="table-text has-text-center">с одним лицевым слоем</p>
+                </div>
             </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="card">
+            <div class="column is-one-third">
+                <div class="card">
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text has-text-center">Угловые</p>
-              <p class="table-text has-text-center">
-                с двумя сопряженными лицевыми слоями
-              </p>
+                    <p class="bold-text has-text-center">Угловые</p>
+                    <p class="table-text has-text-center">
+                        с двумя сопряженными лицевыми слоями
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
         <h3 class="m-one">По поверхности лицевого слоя</h3>
         <div class="columns is-multiline">
-          <div class="column is-half">
-            <div class="card">
+            <div class="column is-half">
+                <div class="card">
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text has-text-center">Декоративные</p>
-              <p class="table-text has-text-center">
-                с гладкой, рифленой, колотой и др. фактурой поверхности (дополнительная декоративная отделка)
-              </p>
+                    <p class="bold-text has-text-center">Декоративные</p>
+                    <p class="table-text has-text-center">
+                        с гладкой, рифленой, колотой и др. фактурой поверхности (дополнительная декоративная отделка)
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="column is-half">
-            <div class="card">
+            <div class="column is-half">
+                <div class="card">
               <span class="icon m-two">
                 <i class="fas fa-image"></i>
               </span>
-              <p class="bold-text has-text-center">Рядовые</p>
-              <p class="table-text has-text-center">
-                с фактурой поверхности без дополнительной декоративной отделки
-              </p>
+                    <p class="bold-text has-text-center">Рядовые</p>
+                    <p class="table-text has-text-center">
+                        с фактурой поверхности без дополнительной декоративной отделки
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="section parametrs" id="parameters">
-      <div class="container">
+    </div>
+</section>
+<section class="section parametrs" id="parameters">
+    <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Характеристики</h2>
         <div class="structure">
-          <div class="structure__title">Структура блока</div>
-          <img src="assets/image/structure.png" class="structure__img" alt="" />
+            <div class="structure__title">Структура блока</div>
+            <img src="assets/image/structure.png" class="structure__img" alt=""/>
         </div>
-        <div class="columns is-multiline parametrs-list">
-          <div class="column is-half">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Номинальные размеры Блоков [длина, ширина (толщина), высота], мм:
-                </p>
-                <p class="table-text">
-                  - порядовочные – 400(500)х400х192 и 1190х400х400(500);<br />
-                  - порядовочные армированные – 2400х400х400;<br />
-                  - угловые – 400(500)х400х192
-                </p>
-              </div>
+        <div class="columns is-multiline parametrs-list" id="params_list">
+            <div class="column is-half">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Номинальные размеры Блоков [длина, ширина (толщина), высота], мм:
+                        </p>
+                        <p class="table-text">
+                            - порядовочные – 400(500)х400х192 и 1190х400х400(500);<br/>
+                            - порядовочные армированные – 2400х400х400;<br/>
+                            - угловые – 400(500)х400х192
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Коэффициент теплопроводности:
-                </p>
-                <p class="table-text">
-                  λ=0,10-0,18 Вт/м×0С<br />
-                  - для полнотелого керамического кирпича λ=0,70 Вт/м×0С<br />
-                  - для пустотелого керамического кирпича λ=0,44 Вт/м×0С)
-                </p>
-              </div>
+            <div class="column is-half">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Коэффициент теплопроводности:
+                        </p>
+                        <p class="table-text">
+                            λ=0,10-0,18 Вт/м×0С<br/>
+                            - для полнотелого керамического кирпича λ=0,70 Вт/м×0С<br/>
+                            - для пустотелого керамического кирпича λ=0,44 Вт/м×0С)
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Проектные классы прочности на сжатие:
-                </p>
-                <p class="table-text">
-                  - В0,35<br />
-                  - В0,75<br />
-                  - В1,0<br />
-                  - В1,5<br />
-                  - В2,0<br />
-                  - В2,5<br />
-                  - В3,5<br />
-                </p>
-              </div>
+            <div class="column is-half">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Проектные классы прочности на сжатие:
+                        </p>
+                        <p class="table-text">
+                            - В0,35<br/>
+                            - В0,75<br/>
+                            - В1,0<br/>
+                            - В1,5<br/>
+                            - В2,0<br/>
+                            - В2,5<br/>
+                            - В3,5<br/>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Марки Блоков по средней плотности:
-                </p>
-                <p class="table-text">
-                  - D300<br />
-                  - D400<br />
-                  - D500<br />
-                  - D600<br />
-                  - D700<br />
-                  - D800
-                </p>
-              </div>
+            <div class="column is-half">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Марки Блоков по средней плотности:
+                        </p>
+                        <p class="table-text">
+                            - D300<br/>
+                            - D400<br/>
+                            - D500<br/>
+                            - D600<br/>
+                            - D700<br/>
+                            - D800
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Марки Блоков по морозостойкости:
-                </p>
-                <p class="table-text">
-                  - F125<br />
-                  - F135<br />
-                  - F150<br />
-                  - F175<br />
-                  - F1100
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Марки Блоков по морозостойкости:
+                        </p>
+                        <p class="table-text">
+                            - F125<br/>
+                            - F135<br/>
+                            - F150<br/>
+                            - F175<br/>
+                            - F1100
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Высокий индекс звукоизо­ляции:
-                </p>
-                <p class="table-text">
-                  при толщине НОК 400мм – Rw > 60 дБ
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Высокий индекс звукоизо­ляции:
+                        </p>
+                        <p class="table-text">
+                            при толщине НОК 400мм – Rw > 60 дБ
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Высокий коэф­фициент паропроницаемости:
-                </p>
-                <p class="table-text">
-                  0,14-0,20 мг/м×час×Па
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Высокий коэф­фициент паропроницаемости:
+                        </p>
+                        <p class="table-text">
+                            0,14-0,20 мг/м×час×Па
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Класс пожарной безопасности:
-                </p>
-                <p class="table-text">
-                  К0
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Класс пожарной безопасности:
+                        </p>
+                        <p class="table-text">
+                            К0
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Низкий радиационный фон:
-                </p>
-                <p class="table-text">
-                  12-16 мкР/час
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Низкий радиационный фон:
+                        </p>
+                        <p class="table-text">
+                            12-16 мкР/час
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Низкая сорбционная способность
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Низкая сорбционная способность
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Высокая технологичность укладки
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Высокая технологичность укладки
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Снижение объемов штукатурных работ
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Снижение объемов штукатурных работ
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Высокая механическая прочность наружных слоёв
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Высокая механическая прочность наружных слоёв
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-half hidden">
-            <div class="parametr">
-              <div class="circle"></div>
-              <div class="parametr-text">
-                <p class="bold-text m-two">
-                  Экологическая чистота
-                </p>
-              </div>
+            <div class="column is-half hidden collapsable">
+                <div class="parametr">
+                    <div class="circle"></div>
+                    <div class="parametr-text">
+                        <p class="bold-text m-two">
+                            Экологическая чистота
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <button class="button is-outlined is-big" tabindex="0">
-          Весь список
+        <button class="button is-outlined is-big" id="wrap_button" tabindex="0">
+            Весь список
         </button>
-      </div>
-    </section>
-    <section class="section solutions" id="solutions">
-      <div class="container">
+    </div>
+</section>
+<section class="section solutions" id="solutions">
+    <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Решения</h2>
         <div class="solutions-box">
-          <div class="solution-radio">
-            <input type="radio" class="radio" id="choice1" name="solution-type" value="solution1" checked /><label
-              for="choice1"
-              >Узел опирания на стены плиты перекрытия</label
+            <div class="solution-radio">
+                <input type="radio" class="radio" id="choice1" name="solution-type" value="solution1" checked/><label
+                    for="choice1"
+            >Узел опирания на стены плиты перекрытия</label
             >
-            <input type="radio" class="radio" id="choice2" name="solution-type" value="solution2" /><label for="choice2"
-              >Исполнение перемычки оконного откоса</label
+                <input type="radio" class="radio" id="choice2" name="solution-type" value="solution2"/><label
+                    for="choice2"
+            >Исполнение перемычки оконного откоса</label
             >
-          </div>
-          <div class="solution-image">
+            </div>
+            <div class="solution-image">
             <span class="icon m-two">
               <i class="fas fa-image"></i>
             </span>
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <section class="section portfolio white-bg" id="portfolio">
-      <div class="container">
+    </div>
+</section>
+<section class="section portfolio white-bg" id="portfolio">
+    <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Портфолио</h2>
         <div class="relative">
-          <div class="owl-carousel">
-            <div class="portfolio__item">
-              <img src="assets/image/portfolio.jpg" alt="" />
-              <div class="portfolio__text">
-                Гостиница «Вега» 17 этажей <br />
-                (г. Тольятти)
-              </div>
+            <div class="owl-carousel">
+                <div class="portfolio__item">
+                    <img src="assets/image/portfolio.jpg" alt=""/>
+                    <div class="portfolio__text">
+                        Гостиница «Вега» 17 этажей <br/>
+                        (г. Тольятти)
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="assets/image/portfolio.jpg" alt=""/>
+                    <div class="portfolio__text">
+                        Фрагмент навесного фасада
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="assets/image/portfolio.jpg" alt=""/>
+                    <div class="portfolio__text">
+                        г. Конаково <br/>
+                        Тверская область
+                    </div>
+                </div>
             </div>
-            <div class="portfolio__item">
-              <img src="assets/image/portfolio.jpg" alt="" />
-              <div class="portfolio__text">
-                Фрагмент навесного фасада
-              </div>
-            </div>
-            <div class="portfolio__item">
-              <img src="assets/image/portfolio.jpg" alt="" />
-              <div class="portfolio__text">
-                г. Конаково <br />
-                Тверская область
-              </div>
-            </div>
-          </div>
-          <a href="#" class="portfolio__all">
-            Все проекты
-          </a>
+            <a href="#" class="portfolio__all">
+                Все проекты
+            </a>
         </div>
-      </div>
-    </section>
-    <section class="section contacts white-bg" id="contacts">
-      <div class="container">
+    </div>
+</section>
+<section class="section contacts white-bg" id="contacts">
+    <div class="container">
         <div class="line m-two"></div>
         <h2 class="m-five">Контакты</h2>
         <div class="columns">
-          <div class="column">
-            <div class="contacts__text">
-              По вопросам сотрудничества нас можно найти по следующим адресам
-            </div>
-          </div>
-          <div class="column">
-            <div class="flex space-between flex-wrap">
-              <div>
-                <div class="flex m-four">
-                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
-                  <div>
-                    <a class="contacts__info" href="tel:+79683349009">+7 (968) 334-90-09</a>
-                    <div class="contacts__info-text">Телефон для связи</div>
-                  </div>
+            <div class="column">
+                <div class="contacts__text">
+                    По вопросам сотрудничества нас можно найти по следующим адресам
                 </div>
-                <div class="flex m-four">
-                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
-                  <div>
-                    <a class="contacts__info" href="tel:+79164047147">+7 (916) 404-71-47</a>
-                    <div class="contacts__info-text">Телефон для связи</div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex m-four align-start">
-                <img src="assets/icons/email.svg" class="contacts__phone-i" alt="" />
-                <div>
-                  <a class="contacts__info" href="mailto:zkbi.lider@gmail.com">zkbi.lider@gmail.com</a>
-                  <div class="contacts__info-text">Электронная почта</div>
-                </div>
-              </div>
             </div>
-            <div class="flex">
-              <img src="assets/icons/point.svg" class="contacts__phone-i" alt="" />
-              <div class="contacts__place">
-                Московская обл., г. Воскресенск, ул. Заводская, дом 1, помещение 2а
-              </div>
+            <div class="column">
+                <div class="flex space-between flex-wrap">
+                    <div>
+                        <div class="flex m-four">
+                            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt=""/>
+                            <div>
+                                <a class="contacts__info" href="tel:+79683349009">+7 (968) 334-90-09</a>
+                                <div class="contacts__info-text">Телефон для связи</div>
+                            </div>
+                        </div>
+                        <div class="flex m-four">
+                            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt=""/>
+                            <div>
+                                <a class="contacts__info" href="tel:+79164047147">+7 (916) 404-71-47</a>
+                                <div class="contacts__info-text">Телефон для связи</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex m-four align-start">
+                        <img src="assets/icons/email.svg" class="contacts__phone-i" alt=""/>
+                        <div>
+                            <a class="contacts__info" href="mailto:zkbi.lider@gmail.com">zkbi.lider@gmail.com</a>
+                            <div class="contacts__info-text">Электронная почта</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="assets/icons/point.svg" class="contacts__phone-i" alt=""/>
+                    <div class="contacts__place">
+                        Московская обл., г. Воскресенск, ул. Заводская, дом 1, помещение 2а
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="section white-bg" id="feedback">
-      <div class="container">
+    </div>
+</section>
+<section class="section white-bg" id="feedback">
+    <div class="container">
         <div class="feedback">
-          <div class="feedback__title">
-            Напишите нам, если у вас остались вопросы
-          </div>
-          <form>
-            <div class="flex columns align-start feedback__mob-view">
-              <div class="column">
-                <div class="feedback__input-wrap m-two">
-                  <div class="feedback__input-title">Ваше имя</div>
-                  <input class="feedback__input" id="feedback_name" />
-                </div>
-                <div class="feedback__input-wrap">
-                  <div class="feedback__input-title">Телефон</div>
-                  <input class="feedback__input" id="feedback_phone" />
-                </div>
-              </div>
-              <div class="column">
-                <div class="feedback__input-wrap">
-                  <div class="feedback__input-title">Текст сообщения</div>
-                  <textarea class="feedback__textarea" name="" cols="30" rows="10" id="feedback_info"></textarea>
-                </div>
-              </div>
+            <div class="feedback__title">
+                Напишите нам, если у вас остались вопросы
             </div>
-            <button class="feedback__btn" id="feedback_submit" type="button">Отправить сообщение</button>
-          </form>
+            <form>
+                <div class="flex columns align-start feedback__mob-view">
+                    <div class="column">
+                        <div class="feedback__input-wrap m-two">
+                            <div class="feedback__input-title">Ваше имя</div>
+                            <input class="feedback__input" id="feedback_name"/>
+                        </div>
+                        <div class="feedback__input-wrap">
+                            <div class="feedback__input-title">Телефон</div>
+                            <input class="feedback__input" id="feedback_phone"/>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="feedback__input-wrap">
+                            <div class="feedback__input-title">Текст сообщения</div>
+                            <textarea class="feedback__textarea" name="" cols="30" rows="10"
+                                      id="feedback_info"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button class="feedback__btn" id="feedback_submit" type="button">Отправить сообщение</button>
+            </form>
         </div>
-      </div>
-    </section>
-    <footer class="footer-main">
-      <div class="container">
+    </div>
+</section>
+<footer class="footer-main">
+    <div class="container">
         <div class="columns">
-          <div class="column is-two-fifths">
-            <div class="footer-main__title m-two">
-              Завод кермазитобетонных изделий «Лидер»
-            </div>
-            <div class="footer-main__copy">© 2019 ООО ЗКБИ “Лидер”</div>
-            <div class="footer-main__reserved">Все права защищены</div>
-          </div>
-          <div class="column">
-            <div class="footer-main__list">
-              <div class="footer-main__item">
-                <a href="#" class="footer-main__link">О технологии</a>
-              </div>
-              <div class="footer-main__item">
-                <a href="#" class="footer-main__link">Характеристики</a>
-              </div>
-              <div class="footer-main__item">
-                <a href="#" class="footer-main__link">Решения</a>
-              </div>
-              <div class="footer-main__item">
-                <a href="#" class="footer-main__link">Портфолио</a>
-              </div>
-              <div class="footer-main__item">
-                <a href="#" class="footer-main__link">Контакты</a>
-              </div>
-            </div>
-          </div>
-          <div class="column is-two-fifths">
-            <div class="flex space-between flex-wrap footer-main__contacts-wrap">
-              <div class="footer-main__phones-wrap">
-                <div class="flex m-four">
-                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
-                  <div>
-                    <a class="contacts__info contacts__info--white" href="tel:+79683349009">
-                      +7 (968) 334-90-09
-                    </a>
-                    <div class="contacts__info-text contacts__info-text--white">
-                      Телефон для связи
-                    </div>
-                  </div>
+            <div class="column is-two-fifths">
+                <div class="footer-main__title m-two">
+                    Завод кермазитобетонных изделий «Лидер»
                 </div>
-                <div class="flex m-four">
-                  <img src="assets/icons/phone.svg" class="contacts__phone-i" alt="" />
-                  <div>
-                    <div class="contacts__info contacts__info--white">
-                      +7 (916) 404-71-47
-                    </div>
-                    <div class="contacts__info-text contacts__info-text--white">
-                      Телефон для связи
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex m-four align-start">
-                <img src="assets/icons/email.svg" class="contacts__phone-i" alt="" />
-                <div>
-                  <a href="mailto:zkbi.lider@gmail.com" class="contacts__info contacts__info--white">
-                    zkbi.lider@gmail.com
-                  </a>
-                  <div class="contacts__info-text contacts__info-text--white">
-                    Электронная почта
-                  </div>
-                </div>
-              </div>
+                <div class="footer-main__copy">© 2019 ООО ЗКБИ “Лидер”</div>
+                <div class="footer-main__reserved">Все права защищены</div>
             </div>
-          </div>
+            <div class="column">
+                <div class="footer-main__list">
+                    <div class="footer-main__item">
+                        <a href="#" class="footer-main__link">О технологии</a>
+                    </div>
+                    <div class="footer-main__item">
+                        <a href="#" class="footer-main__link">Характеристики</a>
+                    </div>
+                    <div class="footer-main__item">
+                        <a href="#" class="footer-main__link">Решения</a>
+                    </div>
+                    <div class="footer-main__item">
+                        <a href="#" class="footer-main__link">Портфолио</a>
+                    </div>
+                    <div class="footer-main__item">
+                        <a href="#" class="footer-main__link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-two-fifths">
+                <div class="flex space-between flex-wrap footer-main__contacts-wrap">
+                    <div class="footer-main__phones-wrap">
+                        <div class="flex m-four">
+                            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt=""/>
+                            <div>
+                                <a class="contacts__info contacts__info--white" href="tel:+79683349009">
+                                    +7 (968) 334-90-09
+                                </a>
+                                <div class="contacts__info-text contacts__info-text--white">
+                                    Телефон для связи
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex m-four">
+                            <img src="assets/icons/phone.svg" class="contacts__phone-i" alt=""/>
+                            <div>
+                                <div class="contacts__info contacts__info--white">
+                                    +7 (916) 404-71-47
+                                </div>
+                                <div class="contacts__info-text contacts__info-text--white">
+                                    Телефон для связи
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex m-four align-start">
+                        <img src="assets/icons/email.svg" class="contacts__phone-i" alt=""/>
+                        <div>
+                            <a href="mailto:zkbi.lider@gmail.com" class="contacts__info contacts__info--white">
+                                zkbi.lider@gmail.com
+                            </a>
+                            <div class="contacts__info-text contacts__info-text--white">
+                                Электронная почта
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./libs/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function() {
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"
+></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./libs/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
-          loop: true,
-          margin: 25,
-          nav: true,
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1
-            },
-            600: {
-              items: 2
-            },
-            1000: {
-              items: 3
+            loop: true,
+            margin: 25,
+            nav: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
             }
-          }
         });
-      });
-    </script>
-    <script src="https://unpkg.com/imask"></script>
-    <script src="libs/core.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('a').on('click', function(event) {
-          if (this.hash !== '') {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate(
-              {
-                scrollTop: $(hash).offset().top
-              },
-              800,
-              function() {
-                window.location.hash = hash;
-              }
-            );
-          }
+    });
+</script>
+<script src="https://unpkg.com/imask"></script>
+<script src="libs/core.js"></script>
+<script>
+    $(document).ready(function () {
+        $('a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
+                    800,
+                    function () {
+                        window.location.hash = hash;
+                    }
+                );
+            }
         });
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>
