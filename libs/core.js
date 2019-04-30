@@ -103,3 +103,16 @@ $(function () {
         }
     })
 });
+
+$(function () {
+   var ch1 = $("#choice1");
+   var ch2 = $("#choice2");
+   var img = $("#choice_img");
+
+   ch1.click(function () {
+       img.prop("src", "assets/image/uzel.png");
+   });
+   ch2.click(function () {
+       img.prop("src", "assets/image/peremychka.png");
+   })
+});
