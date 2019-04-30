@@ -342,6 +342,17 @@ select::-ms-expand {
   bottom: 0;
   left: -999px;
 }
+.nav-links {
+  @media screen and (max-width: 1087px) {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+.nav-contacts {
+  @media screen and (max-width: 1087px) {
+    display: none !important;
+  }
+}
 .navbar-menu {
   justify-content: space-between;
   margin-right: 0 !important;
@@ -430,6 +441,7 @@ select::-ms-expand {
 }
 
 .card {
+  transition: 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -465,6 +477,19 @@ select::-ms-expand {
   border-left: 1px solid #ff8f00;
   padding-left: 16px;
   margin-left: -8px;
+}
+
+.structure {
+  margin-bottom: $base-step * 6;
+  .card {
+    padding: $base-step;
+    background: none;
+    box-shadow: none;
+
+    figure {
+      margin-bottom: $base-step;
+    }
+  }
 }
 
 .navbar-custom-link {
@@ -538,10 +563,26 @@ select::-ms-expand {
     font-size: 46px;
     color: $primary;
   }
+
   .patent {
     display: flex;
     justify-content: center;
-    padding: $base-step * 8 0 0;
+
+    .icon {
+      margin-bottom: $base-step * 2;
+      img {
+        height: 96px;
+      }
+    }
+
+    figure {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
+    }
 
     @media screen and (max-width: 650px) {
       flex-direction: column;
@@ -549,8 +590,11 @@ select::-ms-expand {
     }
 
     .content {
+      display: flex;
+      flex-direction: column;
       max-width: 640px;
       margin-left: $base-step * 4;
+      justify-content: center;
 
       @media screen and (max-width: 650px) {
         margin-left: 0;
@@ -559,6 +603,10 @@ select::-ms-expand {
       }
     }
   }
+}
+
+.patent-wrapper {
+  background-color: $white;
 }
 
 .types {
@@ -570,6 +618,9 @@ select::-ms-expand {
   }
   .card {
     height: 100%;
+  }
+  figure {
+    margin-bottom: $base-step * 2;
   }
 }
 
@@ -594,6 +645,20 @@ select::-ms-expand {
   }
 }
 .solutions {
+  .solution-image {
+    width: 50%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    figure {
+      display: flex;
+      align-items: center;
+
+      img {
+        max-height: 272px;
+      }
+    }
+  }
   .solutions-box {
     display: flex;
     align-items: center;
@@ -610,6 +675,7 @@ select::-ms-expand {
 
     @media screen and (max-width: 767px) {
       flex-direction: row;
+      margin-bottom: $base-step * 2;
     }
 
     input[type='radio'] {
@@ -664,7 +730,7 @@ select::-ms-expand {
     color: #333333;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: $base-step * 2;
   }
 
   &__img {
@@ -688,6 +754,15 @@ select::-ms-expand {
 
     &:hover {
       box-shadow: 0px 5px 15px rgba(84, 110, 136, 0.2);
+    }
+  }
+
+  figure {
+    img {
+      max-height: 240px;
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -718,6 +793,12 @@ select::-ms-expand {
     right: 0;
     bottom: 0;
     z-index: 1;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+      border: none;
+    }
 
     @media screen and (max-width: 460px) {
       position: static;
@@ -837,6 +918,10 @@ select::-ms-expand {
     flex-direction: column-reverse;
   }
 
+  &__wrapper {
+    padding-right: $base-step * 3;
+  }
+
   &__title {
     font-size: 24px;
     font-weight: bold;
@@ -871,6 +956,10 @@ select::-ms-expand {
 
   &__phones-wrap {
     margin-right: 30px;
+
+    a:hover {
+      color: $primary;
+    }
   }
 
   &__contacts-wrap {

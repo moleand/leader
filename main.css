@@ -3691,6 +3691,15 @@ select::-ms-expand {
   bottom: 0;
   left: -999px; }
 
+@media screen and (max-width: 1087px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: column; } }
+
+@media screen and (max-width: 1087px) {
+  .nav-contacts {
+    display: none !important; } }
+
 .navbar-menu {
   justify-content: space-between;
   margin-right: 0 !important; }
@@ -3758,6 +3767,7 @@ select::-ms-expand {
   font-weight: bold; }
 
 .card {
+  transition: 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3788,6 +3798,15 @@ select::-ms-expand {
   border-left: 1px solid #ff8f00;
   padding-left: 16px;
   margin-left: -8px; }
+
+.structure {
+  margin-bottom: 48px; }
+  .structure .card {
+    padding: 8px;
+    background: none;
+    box-shadow: none; }
+    .structure .card figure {
+      margin-bottom: 8px; }
 
 .navbar-custom-link {
   font-size: 14px;
@@ -3851,20 +3870,36 @@ select::-ms-expand {
 
 .about .patent {
   display: flex;
-  justify-content: center;
-  padding: 64px 0 0; }
+  justify-content: center; }
+  .about .patent .icon {
+    margin-bottom: 16px; }
+    .about .patent .icon img {
+      height: 96px; }
+  .about .patent figure {
+    width: 50%;
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 650px) {
+      .about .patent figure {
+        width: 100%; } }
   @media screen and (max-width: 650px) {
     .about .patent {
       flex-direction: column;
       padding-top: 16px; } }
   .about .patent .content {
+    display: flex;
+    flex-direction: column;
     max-width: 640px;
-    margin-left: 32px; }
+    margin-left: 32px;
+    justify-content: center; }
     @media screen and (max-width: 650px) {
       .about .patent .content {
         margin-left: 0;
         text-align: center;
         padding: 16px; } }
+
+.patent-wrapper {
+  background-color: #fff; }
 
 .types h3 + .columns {
   margin-bottom: 32px !important; }
@@ -3874,6 +3909,9 @@ select::-ms-expand {
 
 .types .card {
   height: 100%; }
+
+.types figure {
+  margin-bottom: 16px; }
 
 .parametrs {
   background: #fff; }
@@ -3891,6 +3929,17 @@ select::-ms-expand {
     .parametrs .container .button {
       margin: 0 auto; }
 
+.solutions .solution-image {
+  width: 50%; }
+  @media screen and (max-width: 767px) {
+    .solutions .solution-image {
+      width: 100%; } }
+  .solutions .solution-image figure {
+    display: flex;
+    align-items: center; }
+    .solutions .solution-image figure img {
+      max-height: 272px; }
+
 .solutions .solutions-box {
   display: flex;
   align-items: center; }
@@ -3905,7 +3954,8 @@ select::-ms-expand {
   max-width: 500px; }
   @media screen and (max-width: 767px) {
     .solutions .solution-radio {
-      flex-direction: row; } }
+      flex-direction: row;
+      margin-bottom: 16px; } }
   .solutions .solution-radio input[type='radio'] {
     display: none; }
   .solutions .solution-radio label {
@@ -3949,7 +3999,7 @@ select::-ms-expand {
   color: #333333;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 50px; }
+  margin-bottom: 16px; }
 
 .structure__img {
   margin: 0 auto;
@@ -3967,6 +4017,12 @@ select::-ms-expand {
   transition: 0.2s ease-in-out; }
   .portfolio__item:hover {
     box-shadow: 0px 5px 15px rgba(84, 110, 136, 0.2); }
+
+.portfolio figure img {
+  max-height: 240px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover; }
 
 .portfolio__text {
   height: 100px;
@@ -3994,6 +4050,10 @@ select::-ms-expand {
   right: 0;
   bottom: 0;
   z-index: 1; }
+  .portfolio__all:hover {
+    background-color: #ff8e01;
+    color: #fff;
+    border: none; }
   @media screen and (max-width: 460px) {
     .portfolio__all {
       position: static;
@@ -4083,6 +4143,8 @@ select::-ms-expand {
   @media screen and (max-width: 650px) {
     .footer-main {
       flex-direction: column-reverse; } }
+  .footer-main__wrapper {
+    padding-right: 24px; }
   .footer-main__title {
     font-size: 24px;
     font-weight: bold;
@@ -4105,6 +4167,8 @@ select::-ms-expand {
     margin-right: 40px; }
   .footer-main__phones-wrap {
     margin-right: 30px; }
+    .footer-main__phones-wrap a:hover {
+      color: #ff8e01; }
   @media screen and (max-width: 930px) {
     .footer-main__contacts-wrap {
       display: block; } }
