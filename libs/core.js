@@ -55,7 +55,7 @@ function checkForm() {
     }
 }
 
-$(function() {
+function loadWrap() {
     var b = $("#wrap_button");
     var l = document.querySelectorAll(".collapsable");
 
@@ -83,7 +83,7 @@ $(function() {
             elem.style.display = "none";
         }
     }
-});
+};
 
 $(function () {
     var bb = $("#burger_button");
@@ -104,7 +104,7 @@ $(function () {
     })
 });
 
-$(function () {
+function loadRadio () {
    var ch1 = $("#choice1");
    var ch2 = $("#choice2");
    var img = $("#choice_img");
@@ -115,4 +115,27 @@ $(function () {
    ch2.click(function () {
        img.prop("src", "assets/image/peremychka.png");
    })
-});
+}
+
+function loadLinks() {
+   var l_1 = $("#links_tech");
+   var l_2 = $("#links_parameters");
+   var l_3 = $("#links_types");
+   var l_4 = $("#links_solutions");
+   l_1.click(function () {
+        document.location.href="https://zkbi-lider.ru/#about";
+        return false;
+    });
+    l_2.click(function () {
+        document.location.href="https://zkbi-lider.ru/#parameters";
+        return false;
+    });
+    l_3.click(function () {
+        document.location.href="https://zkbi-lider.ru/#types";
+        return false;
+    });
+    l_4.click(function () {
+        document.location.href="https://zkbi-lider.ru/#solutions";
+        return false;
+    });
+}
