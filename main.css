@@ -3435,7 +3435,7 @@ body {
   display: flex;
   color: #333;
   flex-direction: column;
-  background: #f9f9f9;
+  background-color: #f0f3f5;
   overflow: hidden; }
 
 h1 {
@@ -3781,12 +3781,6 @@ select::-ms-expand {
     .card {
       padding: 16px; } }
 
-.hoverable:hover {
-  color: #fff;
-  background-color: #ff8e01; }
-  .hoverable:hover i {
-    color: #fff; }
-
 .navigation {
   background: #fff; }
 
@@ -3831,7 +3825,8 @@ select::-ms-expand {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  min-height: 384px; }
+  min-height: 384px;
+  padding-right: 16px; }
 
 .about .advantages {
   background: #fff;
@@ -3870,18 +3865,19 @@ select::-ms-expand {
 
 .about .patent {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: flex-end; }
+  @media screen and (max-width: 650px) {
+    .about .patent {
+      align-items: center; } }
   .about .patent .icon {
     margin-bottom: 16px; }
     .about .patent .icon img {
-      height: 96px; }
-  .about .patent figure {
-    width: 50%;
-    display: flex;
-    align-items: center; }
-    @media screen and (max-width: 650px) {
-      .about .patent figure {
-        width: 100%; } }
+      height: 240px;
+      fill: #fff; }
+      @media screen and (max-width: 650px) {
+        .about .patent .icon img {
+          height: 160px; } }
   @media screen and (max-width: 650px) {
     .about .patent {
       flex-direction: column;
@@ -3890,8 +3886,13 @@ select::-ms-expand {
     display: flex;
     flex-direction: column;
     max-width: 640px;
-    margin-left: 32px;
-    justify-content: center; }
+    margin-left: 48px;
+    justify-content: center;
+    color: #fff; }
+    .about .patent .content .table-text {
+      color: #fff;
+      font-size: 14px;
+      line-height: 180%; }
     @media screen and (max-width: 650px) {
       .about .patent .content {
         margin-left: 0;
@@ -3899,7 +3900,9 @@ select::-ms-expand {
         padding: 16px; } }
 
 .patent-wrapper {
-  background-color: #fff; }
+  background-image: url(assets/denim.png);
+  padding-top: 64px;
+  padding-top: 64px; }
 
 .types h3 + .columns {
   margin-bottom: 32px !important; }
@@ -3915,6 +3918,8 @@ select::-ms-expand {
 
 .parametrs {
   background: #fff; }
+  .parametrs .parametrs-list {
+    margin-top: 64px; }
   .parametrs .container {
     display: flex;
     flex-direction: column; }
@@ -3929,69 +3934,69 @@ select::-ms-expand {
     .parametrs .container .button {
       margin: 0 auto; }
 
-.solutions .solution-image {
-  width: 50%; }
-  @media screen and (max-width: 767px) {
-    .solutions .solution-image {
-      width: 100%; } }
-  .solutions .solution-image figure {
+.solutions {
+  padding-top: 80px;
+  padding-top: 80px; }
+  .solutions .solution-image {
+    width: 50%; }
+    @media screen and (max-width: 767px) {
+      .solutions .solution-image {
+        width: 100%; } }
+    .solutions .solution-image figure {
+      display: flex;
+      align-items: center; }
+      .solutions .solution-image figure img {
+        max-height: 272px; }
+  .solutions .solutions-box {
     display: flex;
     align-items: center; }
-    .solutions .solution-image figure img {
-      max-height: 272px; }
-
-.solutions .solutions-box {
-  display: flex;
-  align-items: center; }
-  @media screen and (max-width: 767px) {
-    .solutions .solutions-box {
-      flex-direction: column; } }
-
-.solutions .solution-radio {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
-  max-width: 500px; }
-  @media screen and (max-width: 767px) {
-    .solutions .solution-radio {
-      flex-direction: row;
-      margin-bottom: 16px; } }
-  .solutions .solution-radio input[type='radio'] {
-    display: none; }
-  .solutions .solution-radio label {
-    display: inline-block;
-    padding: 32px 56px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #616161;
-    background-color: #f9f9f9;
-    position: relative; }
-    @media screen and (max-width: 769px) {
-      .solutions .solution-radio label {
-        padding: 16px;
-        font-size: 18px; } }
     @media screen and (max-width: 767px) {
-      .solutions .solution-radio label {
-        font-size: 16px;
-        text-align: center; } }
-  .solutions .solution-radio input[type='radio']:checked + label {
-    color: #333;
-    background-color: #fff; }
-  .solutions .solution-radio input[type='radio']:checked + label::after {
-    content: '';
-    width: 100px;
-    height: 2px;
-    background: #ff8e01;
-    position: absolute;
-    right: -124px; }
-
-.solutions .solution-image {
-  margin-left: 160px;
-  font-size: 300px;
-  line-height: 300px; }
-  @media screen and (max-width: 767px) {
-    .solutions .solution-image {
-      margin-left: 0; } }
+      .solutions .solutions-box {
+        flex-direction: column; } }
+  .solutions .solution-radio {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
+    max-width: 500px; }
+    @media screen and (max-width: 767px) {
+      .solutions .solution-radio {
+        flex-direction: row;
+        margin-bottom: 16px; } }
+    .solutions .solution-radio input[type='radio'] {
+      display: none; }
+    .solutions .solution-radio label {
+      display: inline-block;
+      padding: 32px 56px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #616161;
+      background-color: #f0f3f5;
+      position: relative; }
+      @media screen and (max-width: 769px) {
+        .solutions .solution-radio label {
+          padding: 16px;
+          font-size: 18px; } }
+      @media screen and (max-width: 767px) {
+        .solutions .solution-radio label {
+          font-size: 16px;
+          text-align: center; } }
+    .solutions .solution-radio input[type='radio']:checked + label {
+      color: #333;
+      background-color: #fff; }
+    .solutions .solution-radio input[type='radio']:checked + label::after {
+      content: '';
+      width: 100px;
+      height: 2px;
+      background: #ff8e01;
+      position: absolute;
+      right: -124px; }
+  .solutions .solution-image {
+    margin-left: 160px;
+    font-size: 300px;
+    line-height: 300px; }
+    @media screen and (max-width: 767px) {
+      .solutions .solution-image {
+        margin-left: 0; } }
 
 .structure__title {
   font-size: 24px;
@@ -4063,7 +4068,7 @@ select::-ms-expand {
   padding-bottom: 16px; }
 
 .contacts {
-  background: #fff; }
+  background-image: url(assets/); }
   .contacts__text {
     max-width: 351px;
     font-size: 18px;

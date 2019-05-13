@@ -19,7 +19,7 @@
 $black: #333;
 $gray-dark: #616161;
 $gray-light: #e0e0e0;
-$gray-lighter: #f9f9f9;
+$gray-lighter: #f0f3f5;
 $white: #fff;
 $primary: #ff8e01;
 
@@ -30,7 +30,7 @@ body {
   display: flex;
   color: $black;
   flex-direction: column;
-  background: $gray-lighter;
+  background-color: $gray-lighter;
   overflow: hidden;
 }
 
@@ -457,13 +457,13 @@ select::-ms-expand {
   }
 }
 
-.hoverable:hover {
-  color: $white;
-  background-color: $primary;
-  i {
-    color: $white;
-  }
-}
+// .hoverable:hover {
+//   color: $white;
+//   background-color: $primary;
+//   i {
+//     color: $white;
+//   }
+// }
 
 .navigation {
   background: #fff;
@@ -521,6 +521,7 @@ select::-ms-expand {
     justify-content: center;
     height: 100%;
     min-height: 384px;
+    padding-right: $base-step * 2;
   }
   .advantages {
     background: $white;
@@ -567,20 +568,19 @@ select::-ms-expand {
   .patent {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    @media screen and (max-width: 650px) {
+      align-items: center;
+    }
 
     .icon {
       margin-bottom: $base-step * 2;
       img {
-        height: 96px;
-      }
-    }
-
-    figure {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      @media screen and (max-width: 650px) {
-        width: 100%;
+        height: 240px;
+        fill: $white;
+        @media screen and (max-width: 650px) {
+          height: 160px;
+        }
       }
     }
 
@@ -593,8 +593,15 @@ select::-ms-expand {
       display: flex;
       flex-direction: column;
       max-width: 640px;
-      margin-left: $base-step * 4;
+      margin-left: $base-step * 6;
       justify-content: center;
+      color: $white;
+
+      .table-text {
+        color: $white;
+        font-size: 14px;
+        line-height: 180%;
+      }
 
       @media screen and (max-width: 650px) {
         margin-left: 0;
@@ -606,7 +613,9 @@ select::-ms-expand {
 }
 
 .patent-wrapper {
-  background-color: $white;
+  background-image: url(assets/denim.png);
+  padding-top: $base-step * 8;
+  padding-top: $base-step * 8;
 }
 
 .types {
@@ -626,6 +635,9 @@ select::-ms-expand {
 
 .parametrs {
   background: $white;
+  .parametrs-list {
+    margin-top: $base-step * 8;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -645,6 +657,8 @@ select::-ms-expand {
   }
 }
 .solutions {
+  padding-top: $base-step * 10;
+  padding-top: $base-step * 10;
   .solution-image {
     width: 50%;
     @media screen and (max-width: 767px) {
@@ -812,7 +826,7 @@ select::-ms-expand {
 }
 
 .contacts {
-  background: #fff;
+  background-image: url(assets/);
   &__text {
     max-width: 351px;
     font-size: 18px;
