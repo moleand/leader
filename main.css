@@ -3781,6 +3781,10 @@ select::-ms-expand {
     .card {
       padding: 16px; } }
 
+.hoverable:hover {
+  box-shadow: 0 10px 32px 0 rgba(38, 39, 39, 0.7);
+  transform: translateY(-5px); }
+
 .navigation {
   background: #fff; }
 
@@ -3819,6 +3823,9 @@ select::-ms-expand {
 
 .navbar-custom-link:last-of-type {
   border-right: 1px solid #f4f4f4; }
+
+.justify {
+  text-align: justify; }
 
 .about .technology {
   display: flex;

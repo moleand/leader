@@ -457,13 +457,10 @@ select::-ms-expand {
   }
 }
 
-// .hoverable:hover {
-//   color: $white;
-//   background-color: $primary;
-//   i {
-//     color: $white;
-//   }
-// }
+.hoverable:hover {
+  box-shadow: 0 10px 32px 0 rgba(38, 39, 39, 0.7);
+  transform: translateY(-5px);
+}
 
 .navigation {
   background: #fff;
@@ -512,6 +509,10 @@ select::-ms-expand {
 
 .navbar-custom-link:last-of-type {
   border-right: 1px solid rgb(244, 244, 244);
+}
+
+.justify {
+  text-align: justify;
 }
 
 .about {
