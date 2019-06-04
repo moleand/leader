@@ -3507,7 +3507,11 @@ h5 {
 .tiny-text {
   font-size: 12px;
   line-height: 1.5;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #616161; }
+
+.m-top {
+  margin-top: 80px; }
 
 .m-one {
   margin-bottom: 8px; }
@@ -3773,7 +3777,6 @@ select::-ms-expand {
   align-items: center;
   border-radius: 4px;
   padding: 24px;
-  min-height: 250px;
   background: #fff;
   box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
   height: 100%; }
@@ -3798,7 +3801,7 @@ select::-ms-expand {
   margin-left: -8px; }
 
 .structure {
-  margin-bottom: 48px; }
+  margin-bottom: 80px; }
   .structure .card {
     padding: 8px;
     background: none;
@@ -3911,22 +3914,60 @@ select::-ms-expand {
   padding-top: 64px;
   padding-top: 64px; }
 
-.types h3 + .columns {
-  margin-bottom: 32px !important; }
+.types {
+  background-color: #fff; }
+  .types .block_info {
+    padding-right: 24px; }
+  .types .block_info-image {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .types .block_info-container {
+    margin-bottom: 80px; }
+  .types h3 + .columns {
+    margin-bottom: 32px !important; }
+  .types i {
+    font-size: 180px; }
+  .types .card {
+    height: 100%; }
+  .types figure {
+    margin-bottom: 16px; }
 
-.types i {
-  font-size: 180px; }
+.usage-heading {
+  color: #fff; }
 
-.types .card {
-  height: 100%; }
+.usage-wrapper {
+  margin-bottom: 64px !important; }
 
-.types figure {
-  margin-bottom: 16px; }
+.usage-count {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ff8e01;
+  margin-bottom: 8px; }
+
+.usage-text {
+  color: #fff; }
+
+.outside-wrapper {
+  display: flex;
+  align-items: center; }
+
+.outside-wrapper + .outside-wrapper {
+  margin-top: 24px; }
+
+.outside-line {
+  width: 32px;
+  min-width: 32px;
+  background-color: #616161;
+  height: 2px;
+  margin-right: 16px; }
+
+.outside-text {
+  font-size: 16px;
+  color: #333; }
 
 .parametrs {
   background: #fff; }
-  .parametrs .parametrs-list {
-    margin-top: 64px; }
   .parametrs .container {
     display: flex;
     flex-direction: column; }
@@ -4009,7 +4050,7 @@ select::-ms-expand {
   font-size: 24px;
   line-height: 27px;
   color: #333333;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   margin-bottom: 16px; }
 

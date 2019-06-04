@@ -115,6 +115,11 @@ h5 {
   font-size: 12px;
   line-height: 1.5;
   font-weight: normal;
+  color: $gray-dark;
+}
+
+.m-top {
+  margin-top: $base-step * 10;
 }
 
 .m-one {
@@ -447,7 +452,6 @@ select::-ms-expand {
   align-items: center;
   border-radius: 4px;
   padding: $base-step * 3;
-  min-height: 250px;
   background: $white;
   box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
   height: 100%;
@@ -477,7 +481,7 @@ select::-ms-expand {
 }
 
 .structure {
-  margin-bottom: $base-step * 6;
+  margin-bottom: $base-step * 10;
   .card {
     padding: $base-step;
     background: none;
@@ -620,6 +624,18 @@ select::-ms-expand {
 }
 
 .types {
+  background-color: $white;
+  .block_info {
+    padding-right: $base-step * 3;
+  }
+  .block_info-image {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .block_info-container {
+    margin-bottom: $base-step * 10;
+  }
   h3 + .columns {
     margin-bottom: $base-step * 4 !important;
   }
@@ -634,11 +650,45 @@ select::-ms-expand {
   }
 }
 
+.usage-heading {
+  color: $white;
+}
+
+.usage-wrapper {
+  margin-bottom: $base-step * 8 !important;
+}
+
+.usage-count {
+  font-size: 64px;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: $base-step;
+}
+
+.usage-text {
+  color: $white;
+}
+.outside-wrapper {
+  display: flex;
+  align-items: center;
+}
+.outside-wrapper + .outside-wrapper {
+  margin-top: $base-step * 3;
+}
+.outside-line {
+  width: $base-step * 4;
+  min-width: $base-step * 4;
+  background-color: $gray-dark;
+  height: 2px;
+  margin-right: $base-step * 2;
+}
+.outside-text {
+  font-size: 16px;
+  color: $black;
+}
 .parametrs {
   background: $white;
-  .parametrs-list {
-    margin-top: $base-step * 8;
-  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -743,7 +793,7 @@ select::-ms-expand {
     font-size: 24px;
     line-height: 27px;
     color: #333333;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     margin-bottom: $base-step * 2;
   }
