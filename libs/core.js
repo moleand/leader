@@ -21,7 +21,7 @@ $(document).ready(function () {
                 $('#feedback_submit')[0].innerText = 'Сообщение успешно отправлено!';
 
 
-                setTimeout(()=>{
+                setTimeout(() => {
                     $('#feedback_submit')[0].innerText = 'Отправить сообщение';
                     $('#feedback_name')[0].value = '';
                     mask.unmaskedValue = '';
@@ -30,7 +30,7 @@ $(document).ready(function () {
             })
             .catch(err => {
                 $('#feedback_submit')[0].innerText = 'Произошла ошибка, попробуйте позже!';
-                setTimeout(()=>{
+                setTimeout(() => {
                     $('#feedback_submit')[0].innerText = 'Отправить сообщение';
                 }, 3000)
             })
@@ -59,10 +59,10 @@ function loadWrap() {
     var b = $("#wrap_button");
     var l = document.querySelectorAll(".collapsable");
 
-    b.click(function() {
+    b.click(function () {
         for (let i = 0; i < l.length; i++) {
             const elem = l[i];
-            if(elem.classList.contains('hidden')){
+            if (elem.classList.contains('hidden')) {
                 elem.classList.remove('hidden');
                 elem.style.display = "";
             } else {
@@ -78,7 +78,7 @@ function loadWrap() {
 
     for (let i = 0; i < l.length; i++) {
         const elem = l[i];
-        if(elem.classList.contains('hidden')){
+        if (elem.classList.contains('hidden')) {
             elem.classList.add('hidden');
             elem.style.display = "none";
         }
@@ -92,7 +92,7 @@ $(function () {
 
     bb.click(function () {
         var act = bb_outer.hasClass("is-hidden-touch");
-        if(act){
+        if (act) {
             bb_outer.removeClass("is-hidden-touch");
             bb_inner.addClass("is-active");
             bb.addClass("is-active");
@@ -104,38 +104,38 @@ $(function () {
     })
 });
 
-function loadRadio () {
-   var ch1 = $("#choice1");
-   var ch2 = $("#choice2");
-   var img = $("#choice_img");
+function loadRadio() {
+    var ch1 = $("#choice1");
+    var ch2 = $("#choice2");
+    var img = $("#choice_img");
 
-   ch1.click(function () {
-       img.prop("src", "assets/image/uzel.png");
-   });
-   ch2.click(function () {
-       img.prop("src", "assets/image/peremychka.png");
-   })
+    ch1.click(function () {
+        img.prop("src", "assets/image/uzel.svg");
+    });
+    ch2.click(function () {
+        img.prop("src", "assets/image/peremychka.svg");
+    })
 }
 
 function loadLinks() {
-   var l_1 = $("#links_tech");
-   var l_2 = $("#links_parameters");
-   var l_3 = $("#links_types");
-   var l_4 = $("#links_solutions");
-   l_1.click(function () {
-        document.location.href="https://zkbi-lider.ru/#about";
+    var l_1 = $("#links_tech");
+    var l_2 = $("#links_parameters");
+    var l_3 = $("#links_types");
+    var l_4 = $("#links_solutions");
+    l_1.click(function () {
+        document.location.href = "https://zkbi-lider.ru/#about";
         return false;
     });
     l_2.click(function () {
-        document.location.href="https://zkbi-lider.ru/#parameters";
+        document.location.href = "https://zkbi-lider.ru/#parameters";
         return false;
     });
     l_3.click(function () {
-        document.location.href="https://zkbi-lider.ru/#types";
+        document.location.href = "https://zkbi-lider.ru/#types";
         return false;
     });
     l_4.click(function () {
-        document.location.href="https://zkbi-lider.ru/#solutions";
+        document.location.href = "https://zkbi-lider.ru/#solutions";
         return false;
     });
 }
