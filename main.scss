@@ -668,9 +668,20 @@ select::-ms-expand {
 .usage-text {
   color: $white;
 }
+.wrap {
+  flex-wrap: wrap;
+}
 .outside-wrapper {
   display: flex;
   align-items: center;
+
+  ul {
+    margin-left: $base-step*8;
+    font-size: 14px;
+    color: $gray-dark;
+    margin-top: $base-step;
+    list-style: square;
+  }
 }
 .outside-wrapper + .outside-wrapper {
   margin-top: $base-step * 3;
@@ -737,6 +748,10 @@ select::-ms-expand {
     flex-direction: column;
     box-shadow: 0 0 25px 0 rgba(36, 39, 41, 0.1);
     max-width: 500px;
+
+    label {
+      cursor: pointer;
+    }
 
     @media screen and (max-width: 767px) {
       flex-direction: row;
