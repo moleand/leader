@@ -138,4 +138,28 @@ function loadLinks() {
         document.location.href = "https://zkbi-lider.ru/#solutions";
         return false;
     });
+    loadAdditionalLinks();
+}
+
+function loadAdditionalLinks(){
+    var l_1 = $("#links_tech_bottom");
+    var l_2 = $("#links_parameters_bottom");
+    var l_3 = $("#links_types_bottom");
+    var l_4 = $("#links_solutions_bottom");
+    l_1.click(function () {
+        document.location.href = "https://zkbi-lider.ru/#about";
+        return false;
+    });
+    l_2.click(function () {
+        document.location.href = "https://zkbi-lider.ru/#parameters";
+        return false;
+    });
+    l_3.click(function () {
+        document.location.href = "https://zkbi-lider.ru/#types";
+        return false;
+    });
+    l_4.click(function () {
+        document.location.href = "https://zkbi-lider.ru/#solutions";
+        return false;
+    });
 }
