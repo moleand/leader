@@ -15,6 +15,7 @@
 @import 'node_modules/bulma/sass/base/_all.sass';
 @import 'node_modules/bulma/sass/components/navbar.sass';
 @import 'node_modules/bulma/sass/elements/container.sass';
+@import 'node_modules/bulma-timeline/dist/css/bulma-timeline.sass';
 
 $black: #333;
 $gray-dark: #616161;
@@ -1099,4 +1100,12 @@ select::-ms-expand {
   border-style: solid;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #000333;
+}
+
+.timeline-item::before, .timeline-marker {
+  background-color: $primary !important;
+}
+
+.timeline-marker {
+  border-color: $primary !important;
 }

@@ -141,7 +141,7 @@ function loadLinks() {
     loadAdditionalLinks();
 }
 
-function loadAdditionalLinks(){
+function loadAdditionalLinks() {
     var l_1 = $("#links_tech_bottom");
     var l_2 = $("#links_parameters_bottom");
     var l_3 = $("#links_types_bottom");
