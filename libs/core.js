@@ -123,7 +123,7 @@ function loadLinks() {
     var l_3 = $("#links_types");
     var l_4 = $("#links_solutions");
     l_1.click(function () {
-        document.location.href = "https://zkbi-lider.ru/#about";
+        document.location.href = "https://zkbi-lider.ru/about";
         return false;
     });
     l_2.click(function () {
@@ -147,7 +147,7 @@ function loadAdditionalLinks() {
     var l_3 = $("#links_types_bottom");
     var l_4 = $("#links_solutions_bottom");
     l_1.click(function () {
-        document.location.href = "https://zkbi-lider.ru/#about";
+        document.location.href = "https://zkbi-lider.ru/about";
         return false;
     });
     l_2.click(function () {
