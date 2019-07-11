@@ -252,8 +252,27 @@
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <script src="libs/core.js"></script>
+    <script>
+        $(function () {
+            var bb = $("#burger_button");
+            var bb_outer = $("#bb_outer");
+            var bb_inner = $("#bb_inner");
+
+            bb.click(function () {
+                var act = bb_outer.hasClass("is-hidden-touch");
+                if (act) {
+                    bb_outer.removeClass("is-hidden-touch");
+                    bb_inner.addClass("is-active");
+                    bb.addClass("is-active");
+                } else {
+                    bb_outer.addClass("is-hidden-touch");
+                    bb_inner.removeClass("is-active");
+                    bb.removeClass("is-active");
+                }
+            })
+        });
+    </script>
     <script>
         $(function () {
             loadLinks();
